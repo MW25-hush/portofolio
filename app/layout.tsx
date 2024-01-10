@@ -4,9 +4,9 @@ import Navbar from "@/components/organisms/navbar";
 import { Bebas_Neue } from "next/font/google";
 
 const bebas_neve = Bebas_Neue({
-  weight: ['400'],
-  subsets: ['latin'], 
-  variable: '--font-bebas-neve',
+  weight: ["400"],
+  subsets: ["latin"],
+  variable: "--font-bebas-neve",
 });
 
 export const metadata: Metadata = {
@@ -21,7 +21,9 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${bebas_neve.variable}`}>
+      <body
+        className={`${bebas_neve.variable} grid lg:grid-cols-12 font-helvetica`}
+      >
         <Navbar />
         {children}
       </body>

@@ -18,7 +18,8 @@ const config: Config = {
         },
       },
       fontFamily : {
-        bebas_neve: ['var(--font-bebas-neve)']
+        bebas_neve: ['var(--font-bebas-neve)'],
+        helvetica : ["Helvetica"]
       }
     },
   },
