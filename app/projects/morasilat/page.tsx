@@ -4,7 +4,7 @@ import persona from "../../../public/images/persona.jpg";
 import wireframe from "../../../public/images/wirefame.jpg";
 import wireframe2 from "../../../public/images/wireframe2.jpg";
 import dashbboard from "../../../public/images/dashboard.png";
-import writePage from "../../../public/images/write 2 .png";
+import writePage from "../../../public/images/writeTwo.png";
 import archivePage from "../../../public/images/archive.png";
 
 function Morasilat() {
