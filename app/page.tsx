@@ -30,7 +30,7 @@ export default function Home() {
           </div>
           <div className="col-span-4">
             <Image
-              src={myPhoto}
+              src={"../public/images/myPhoto.jpg"}
               alt="photo"
               className=" rounded-full h-[400px] w-[400px] object-cover border border-primary "
             />
