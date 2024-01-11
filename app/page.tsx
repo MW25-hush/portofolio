@@ -1,5 +1,4 @@
 import Image from "next/image";
-import myPhoto from "../public/images/myPhoto.jpg";
 import Card from "@/components/card";
 
 const icons = [
