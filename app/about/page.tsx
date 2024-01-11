@@ -1,5 +1,6 @@
 import Image from "next/image";
 import myPhoto from "../../public/images/myPhoto.jpg";
+import Contact from "@/components/organisms/contact";
 
 function About() {
   return (
@@ -35,9 +36,7 @@ function About() {
         </ul>
       </div>
 
-      <div className="bg-secondary text-primary">
-            
-      </div>
+      <Contact />
     </div>
   );
 }

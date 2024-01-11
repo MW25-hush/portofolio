@@ -3,12 +3,19 @@ import { cva, cx, VariantProps } from "class-variance-authority";
 const buttonCVA = cva(["rounded", "font-bold", "capitalize"], {
   variants: {
     intent: {
-      primary: ["bg-primary", "text-white", "hover:bg-primary"],
+      primary: [
+        "bg-primary",
+        "text-white",
+        "rounded-[0.5rem]",
+        "hover:bg-secondary",
+        "hover:text-primary",
+      ],
       secondary: [
         "border",
         "border-primary",
-        "hover:bg-primary",
-        "hover:text-white",
+        "hover:bg-secondary",
+        "hover:text-primary",
+        "hover:border-0",
       ],
       tertiary: ["hover:underline"],
     },
