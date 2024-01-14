@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Card from "@/components/card";
+import myPhoto from "../public/images/myPhoto.jpg";
 
 const icons = [
   "figma",
@@ -16,9 +17,9 @@ const icons = [
 export default function Home() {
   return (
     <>
-      <div className="col-start-3 col-end-11  mt-16">
-        <div className="grid grid-cols-8 items-center gap-20">
-          <div className="flex flex-col col-span-4 gap-[1.5rem] w-[60ch]">
+      <div className="col-start-1 col-end-5 mt-16 lg:col-start-3  lg:col-end-11">
+        <div className="grid grid-cols-4 items-center lg:grid-cols-8 lg:gap-20">
+          <div className="col-span-4 mx-auto flex w-[60ch] flex-col gap-[1.5rem] text-center lg:mx-0 lg:text-left">
             <h1 className="text-[2rem] font-bold ">
               Bridging Code and Creativity as a React Alchemist & UI/UX Maestro
             </h1>
@@ -27,24 +28,26 @@ export default function Home() {
               Digital magic with pixels and code.
             </p>
           </div>
-          <div className="col-span-4">
+          <div className="col-span-4 mx-auto mt-2 lg:mx-0">
             <Image
-              src={"../public/images/myPhoto.jpg"}
+              src={myPhoto}
               alt="photo"
-              className=" rounded-full h-[400px] w-[400px] object-cover border border-primary "
+              className=" h-[400px] w-[400px] rounded-full border border-primary object-cover "
             />
           </div>
         </div>
-        <div className="flex items-center mt-16">
-          <h1 className="font-semibold ">Tech Stack</h1>
-          <div className="border-r border-tertiary h-10 ml-4 mr-8"></div>
-          <div className="flex space-x-4">
+        <div className="mx-2 mt-16  flex items-center">
+          <h1 className=" text-center text-[1.5rem] font-bold lg:text-left lg:font-semibold ">
+            Tech Stack
+          </h1>
+          <div className="ml-2 mr-4 h-10 border-r border-tertiary lg:ml-4 lg:mr-8"></div>
+          <div className="flex flex-wrap gap-4 space-y-2 ">
             {icons.map((icon) => (
               <Image
                 key={icon}
                 src={`https://skillicons.dev/icons?i=${icon}`}
                 alt="icons"
-                className="hover:-translate-y-6 transition-transform ease-in-out duration-500"
+                className="transition-transform duration-500 ease-in-out hover:-translate-y-6"
                 height={50}
                 width={50}
                 title={icon}
@@ -53,8 +56,8 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className="lg:col-start-2 lg:col-end-12 mt-20 ">
-        <h1 className="text-[1.5rem] font-bold mb-[1.5rem]">Projects</h1>
+      <div className=" col-start-1 col-end-5 mx-2 mt-20 lg:col-start-2 lg:col-end-12 lg:mx-0  ">
+        <h1 className="mb-[1.5rem] ml-2 text-[1.5rem] font-bold">Projects</h1>
         <Card />
       </div>
     </>

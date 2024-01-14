@@ -7,7 +7,7 @@ import { usePathname } from "next/navigation";
 export default function Navbar() {
   const pathname = usePathname();
   return (
-    <div className="mt-8  font-bebas_neve flex justify-between items-center  lg:col-start-2 lg:col-end-12 ">
+    <div className="mt-8  font-bebas_neve flex justify-between items-center mx-4 lg:mx-0 col-span-4  lg:col-start-2 lg:col-end-12 ">
       <div className=" text-[2.5rem] tracking-[0.05em]">M@W</div>
       <div className="flex space-x-8 font-helvetica text-lg capitalize ">
         <Link
