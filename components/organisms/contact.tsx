@@ -1,19 +1,20 @@
+import Link from "next/link";
 import { FaClock, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa6";
 
 import { PiReadCvLogoFill } from "react-icons/pi";
 
 function Contact() {
   return (
-    <div className="bg-secondary text-primary w-fit px-[3rem] py-[1.5rem] rounded-[1rem] mt-[4rem] mb-[2rem]">
-      <div className="flex items-center space-x-[1rem] mb-[1.5rem] ">
+    <div className="mx-2 mb-[2rem] mt-[4rem] w-fit rounded-[1rem] bg-secondary px-[3rem] py-[1.5rem] text-primary lg:mx-0">
+      <div className="mb-[1.5rem] flex items-center text-center lg:space-x-[1rem] lg:text-left ">
         <h1 className="text-[1.5rem] font-bold ">
           Thank you for giving me your time!
         </h1>
-        <FaClock size={24} />
+        <FaClock size={24} className="hidden lg:block" />
       </div>
-      <div className="flex space-x-[1.5rem] ">
+      <div className="flex flex-col space-y-[1.5rem] text-center lg:flex-row lg:space-x-[1.5rem] lg:space-y-0 lg:text-left ">
         <div>
-          <div className="flex items-center space-x-[1rem]  ">
+          <div className="flex items-center justify-center space-x-[1rem] lg:justify-start   ">
             <h1 className="text-[1.5rem] font-bold ">Contact Me</h1>
             <FaEnvelope size={24} />
           </div>
@@ -22,16 +23,20 @@ function Contact() {
 
         <div>
           <h1 className="text-[1.5rem] font-bold ">Let&apos;s connect</h1>
-          <div className="flex ">
-            <div className="flex border-r pr-2 border-primary   items-center space-x-[0.5rem] ">
+          <div className="flex justify-center lg:justify-self-start ">
+         <Link href={"https://www.linkedin.com/in/mohammad-mehdi-wahid/"}>
+            <div className="flex items-center space-x-[0.5rem] border-r   border-primary pr-2 ">
               <p>LinkedIn</p>
               <FaLinkedin size={24} className="text-primary" />
             </div>
-            <div className="flex border-r px-2 border-primary items-center space-x-[0.5rem]">
+            </Link>
+             <Link href={"https://github.com/MW25-hush"}>
+            <div className="flex items-center space-x-[0.5rem] border-r border-primary px-2">
               <p>Github</p>
               <FaGithub size={24} className="text-primary" />
             </div>
-            <div className="flex pl-2 items-center space-x-[0.5rem]">
+              </Link>
+            <div className="flex items-center space-x-[0.5rem] pl-2">
               <p>Resume</p>
               <PiReadCvLogoFill size={24} className="text-primary" />
             </div>

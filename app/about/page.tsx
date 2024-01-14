@@ -4,12 +4,12 @@ import Contact from "@/components/organisms/contact";
 
 function About() {
   return (
-    <div className="mt-16 col-start-2 col-end-12 ">
-      <div className="grid grid-cols-6">
-        <div className="col-span-3">
+    <div className="mt-16 col-start-1 col-end-5 lg:col-start-2 lg:col-end-12 ">
+      <div className="grid grid-cols-6 mx-2">
+        <div className="col-span-6 lg:col-span-3  text-center lg:text-left">
           {" "}
           <h1 className="text-[2.5rem] font-bold mb-[1.5rem]">About</h1>
-          <p className="text-[1.25rem] w-[50ch]">
+          <p className="text-[1.25rem] ">
             Hi, I’m Mohammad Mehdi Wahid. I’m a UX engineer. I am capable of
             working on both the design and the development of an application. I
             am comfortable using Figma for design and then I prefer to use Next
@@ -23,12 +23,12 @@ function About() {
             to read books especially those on design and programming.
           </p>
         </div>
-        <div className="col-span-3 justify-self-center">
+        <div className="col-span-3 hidden lg:block justify-self-center">
           <Image src={myPhoto} alt="" height={500} />
         </div>
       </div>
 
-      <div className="mt-[4rem] ">
+      <div className="mt-[4rem] text-center lg:text-left  ">
         <p className="text-[1.5rem] font-bold mb-[1.5rem]">Education</p>
         <ul className="list-disc ml-4 list-inside space-y-[0.5rem]">
           <li className="mr-10">Bachelor of Computer Science (2019-2023)</li>

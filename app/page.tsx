@@ -18,30 +18,30 @@ export default function Home() {
   return (
     <>
       <div className="col-start-1 col-end-5 mt-16 lg:col-start-3  lg:col-end-11">
-        <div className="grid grid-cols-4 items-center lg:grid-cols-8 lg:gap-20">
-          <div className="col-span-4 mx-auto flex w-[60ch] flex-col gap-[1.5rem] text-center lg:mx-0 lg:text-left">
-            <h1 className="text-[2rem] font-bold ">
+        <div className="grid grid-cols-4 gap-4 lg:gap-0  lg:grid-cols-8 lg:items-center ">
+          <div className="order-2 col-span-4 mx-2 text-center space-y-2 lg:order-none  lg:mx-0 lg:flex  lg:flex-col lg:gap-[1rem] lg:space-y-0 lg:text-left">
+            <h1 className="md: mx-auto max-w-[80%] text-[1.5rem] font-bold md:max-w-[60%] lg:mx-0 lg:max-w-full lg:text-[2rem]">
               Bridging Code and Creativity as a React Alchemist & UI/UX Maestro
             </h1>
-            <p className="text-[1.25rem]">
+            <p className=" mx-auto max-w-[80%] md:max-w-[60%] lg:mx-0  lg:max-w-full lg:text-[1.25rem]">
               Hello, I&apos;m Mohammad Mehdi Wahid. A passionate creator weaving
               Digital magic with pixels and code.
             </p>
           </div>
-          <div className="col-span-4 mx-auto mt-2 lg:mx-0">
+          <div className="order-1 col-span-4 mx-auto mt-2 lg:order-none ">
             <Image
               src={myPhoto}
               alt="photo"
-              className=" h-[400px] w-[400px] rounded-full border border-primary object-cover "
+              className=" w-[250px]   rounded-full border border-primary object-cover  lg:w-[300px] "
             />
           </div>
         </div>
-        <div className="mx-2 mt-16  flex items-center">
+        <div className="mx-2 lg:mx-0 mt-16  items-center lg:flex ">
           <h1 className=" text-center text-[1.5rem] font-bold lg:text-left lg:font-semibold ">
             Tech Stack
           </h1>
-          <div className="ml-2 mr-4 h-10 border-r border-tertiary lg:ml-4 lg:mr-8"></div>
-          <div className="flex flex-wrap gap-4 space-y-2 ">
+          <div className=" mx-auto mb-2  mt-4 w-1/2 border-b border-accent-gray lg:ml-4 lg:mr-8 lg:h-10 lg:w-0 lg:border-r lg:border-tertiary"></div>
+          <div className="flex flex-wrap justify-center gap-4  space-y-2 max-w-[80%] mx-auto lg:max-w-full lg:mx-0  ">
             {icons.map((icon) => (
               <Image
                 key={icon}
@@ -57,7 +57,9 @@ export default function Home() {
         </div>
       </div>
       <div className=" col-start-1 col-end-5 mx-2 mt-20 lg:col-start-2 lg:col-end-12 lg:mx-0  ">
-        <h1 className="mb-[1.5rem] ml-2 text-[1.5rem] font-bold">Projects</h1>
+        <h1 className="mb-[1.5rem] text-center text-[1.5rem] font-bold lg:ml-2 lg:text-left">
+          Projects
+        </h1>
         <Card />
       </div>
     </>
