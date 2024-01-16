@@ -1,4 +1,5 @@
 import { cva, cx, VariantProps } from "class-variance-authority";
+import { IconType } from "react-icons";
 
 const buttonCVA = cva(["rounded", "font-bold", "capitalize"], {
   variants: {
@@ -56,6 +57,8 @@ interface ButtonProps extends VariantProps<typeof buttonCVA> {
 
   /** Loading state  */
   loading?: boolean;
+
+  Icon?: IconType;
 }
 
 /**
@@ -69,6 +72,7 @@ export const Button = ({
   label,
   width,
   handleClick,
+  Icon,
   ...props
 }: ButtonProps) => {
   return (
@@ -81,8 +85,10 @@ export const Button = ({
       onClick={handleClick}
       disabled={loading}
     >
-      {/* add loading io animation in here */}
-      {label}
+      <span className="flex gap-2 justify-center items-center">
+        {label}
+        {Icon && <Icon size={intent === "tertiary" ? 32 : 16}/>}
+      </span>
     </button>
   );
 };

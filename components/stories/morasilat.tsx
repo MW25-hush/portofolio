@@ -1,11 +1,13 @@
 "use client";
 
 import Image from "next/image";
-import morasilatCover from "../public/images/morasilatCover.png";
-import { Button } from "./molecules/button";
+import morasilatCover from "../../public/images/morasilatCover.png";
+import { Button } from "../molecules/button";
 import { useRouter } from "next/navigation";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { RiGithubLine } from "react-icons/ri";
 
-function Card() {
+function Morasilat() {
   const { push } = useRouter();
   return (
     <div className="mb-4 grid grid-cols-4 rounded-2xl bg-accent-lightGray py-2 shadow-lg  lg:grid-cols-6 lg:px-4 lg:py-8">
@@ -30,6 +32,8 @@ function Card() {
               type="button"
               intent={"secondary"}
               width={"full"}
+              Icon={FaExternalLinkAlt}
+
             />
             <Button
               label="Source Code"
@@ -39,6 +43,7 @@ function Card() {
               handleClick={() =>
                 push("https://github.com/MW25-hush/Murasilat_v2.0")
               }
+              Icon={RiGithubLine}
             />
           </div>
         </div>
@@ -50,4 +55,4 @@ function Card() {
   );
 }
 
-export default Card;
+export default Morasilat;
