@@ -1,9 +1,12 @@
 import Image from "next/image";
 import heroSection from "../../../public/images/heroElib.png";
-import studentPersona from '../../../public/images/eLib/Students Persona.jpg'
-import professorPersona from '../../../public/images/eLib/Professor Persona.jpg'
-
-
+import studentPersona from "../../../public/images/eLib/Students Persona.jpg";
+import professorPersona from "../../../public/images/eLib/Professor Persona.jpg";
+import wireframe from "../../../public/images/eLib/Wireframe.jpg";
+import userJourneyMap from "../../../public/images/eLib/userJourney.jpg";
+import firstMockup from "../../../public/images/eLib/first.png";
+import secondMockup from "../../../public/images/eLib/second.png";
+import thirdMockup from "../../../public/images/eLib/third.png";
 
 function page() {
   return (
@@ -71,60 +74,66 @@ function page() {
 
       <div className="mt-[5rem]">
         <h1 className="text-[2rem] font-bold    ">Persona</h1>
-        <div>
-          <Image src={professorPersona} alt="persona" className=" object-cover " />
-          <Image src={studentPersona} alt="persona" className=" object-cover " />
+        <div className="flex space-x-4 max-w-max ">
+          <Image
+            src={professorPersona}
+            alt="persona"
+            className=" object-cover border border-black  "
+            width={600}
+          />
+          <Image
+            src={studentPersona}
+            alt="persona"
+            className=" object-cover border border-black "
+            width={600}
+          />
         </div>
       </div>
 
       <div className="mt-[5rem]">
-        <h1 className="- text-[2rem] font-bold">Paper Wireframes</h1>
+        <h1 className=" text-[2rem] font-bold">Digital Wireframes</h1>
         <div className="mt-[1.5rem] flex space-x-4 ">
-          {/* <Image
+          <Image
             src={wireframe}
             alt="wireframe"
-            height={800}
-            width={600}
             className="border border-black object-cover"
           />
+        </div>
+
+        <h1 className=" text-[2rem] font-bold">User Journey Map</h1>
+
+        <div className="mt-[1.5rem] flex space-x-4 ">
           <Image
-            src={wireframe2}
-            alt="wireframeTwo"
-            height={800}
-            width={600}
+            src={userJourneyMap}
+            alt="wireframe"
             className="border border-black object-cover"
-          /> */}
+          />
         </div>
       </div>
 
       <div className="mt-[5rem]">
         <h1 className="mb-[1.5rem] text-[2rem] font-bold ">Hi-fi Mockups</h1>
-        <div className="space-y-4 ">
-          {/* <Image
-            src={dashbboard}
-            alt="wireframe"
-            className="border border-black object-cover p-4"
-          />
+        <div className="flex rounded-[1rem] bg-accent-lightGray shadow-lg ">
+          <Image src={firstMockup} alt="wireframe" height={400} width={300} />
+          <Image src={secondMockup} alt="wireframe" height={400} width={300} />
           <Image
-            src={writePage}
+            src={thirdMockup}
             alt="wireframe"
-            className="border border-black p-4"
+            className="object-cover"
+            height={400}
+            width={300}
           />
-          <Image
-            src={archivePage}
-            alt="wireframe"
-            className="border border-black p-4"
-          /> */}
         </div>
       </div>
 
       <div className="mb-[3rem] mt-[5rem] text-center ">
         <h1 className="text-[2rem] font-bold  ">What I&apos;ve learned</h1>
         <p className="mx-auto w-[55ch] leading-[140%]">
-          Morasilat was my first real world project which right now it is used
-          by hundreds of users. I implemented industry level standards such as
-          design thinking process and lean agile development method to work on
-          such a massive project.
+          E-Lib was a real world project where I collaborated with real people
+          to find a solution for the pain points that people are facing. I
+          applied the industry standard procedures for my project such as the
+          most important one:
+          <span className="font-semibold">The Design Thinking process</span>
         </p>
       </div>
     </div>
