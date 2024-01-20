@@ -20,7 +20,7 @@ const icons = [
 export default function Home() {
   return (
     <>
-      <div className="col-start-1 col-end-5 mt-16 lg:col-start-3  lg:col-end-11">
+      <div className="col-start-1 col-end-5 mt-16 lg:col-start-3  lg:col-end-11 h-[100vh]">
         <div className="grid grid-cols-4 gap-4 lg:grid-cols-8  lg:items-center lg:gap-0 ">
           <div className="order-2 col-span-4 mx-2 space-y-2 text-center lg:order-none  lg:mx-0 lg:flex  lg:flex-col lg:gap-[1rem] lg:space-y-0 lg:text-left">
             <h1 className="md: mx-auto max-w-[80%] text-[1.5rem] font-bold md:max-w-[60%] lg:mx-0 lg:max-w-full lg:text-[2rem]">
@@ -60,7 +60,7 @@ export default function Home() {
         </div>
       </div>
       {/* projects section  */}
-      <div className=" col-start-1 col-end-5 mx-2 mt-20 lg:col-start-2 lg:col-end-12 lg:mx-0  ">
+      <div className=" col-start-1 col-end-5 mx-2 mt- lg:col-start-2 lg:col-end-12 lg:mx-0  ">
         <h1 className="mb-[1.5rem] text-center text-[1.5rem] font-bold lg:ml-2 lg:text-left">
           Projects
         </h1>
