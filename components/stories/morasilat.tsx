@@ -1,7 +1,7 @@
 "use client";
 
 import Image from "next/image";
-import morasilatCover from "../../public/images/morasilatCover.png";
+import morasilatCover from "../../public/images/morasilat/morasilatCover.png";
 import { Button } from "../molecules/button";
 import { useRouter } from "next/navigation";
 import { FaExternalLinkAlt } from "react-icons/fa";

@@ -3,7 +3,7 @@
 import { Button } from "../molecules/button";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import eLib from "../../public/images/eLibCover.png";
+import eLib from "../../public/images/elib/eLibCover.png";
 import {FaExternalLinkAlt} from 'react-icons/fa'
 
 function ELib() {

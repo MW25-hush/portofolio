@@ -3,9 +3,11 @@ import myPhoto from "../../public/images/myPhoto.jpg";
 import Contact from "@/components/organisms/contact";
 import kabulUni from "../../public/images/KabulUni.png";
 import dsic from "../../public/images/DSIC.png";
+import { FcGoogle } from "react-icons/fc";
 
 function About() {
   return (
+    <>
     <div className="col-start-1 col-end-5 mt-16 lg:col-start-2 lg:col-end-12 ">
       <div className="mx-2 grid grid-cols-6">
         <div className="col-span-6 text-center  lg:col-span-3 lg:text-left">
@@ -15,14 +17,20 @@ function About() {
             design and develop an application. I’m a bachelor of software
             engineering from computer science faculty of Kabul University. I
             also pursued my passion for design and solving user problems with
-            achieving Google UX Certificate.
+             Google UX Professional Certificate.
           </p>
-          <div>
-            <h1>My Journey</h1>
-            <section>
-              <div className="flex">
-                <Image src={kabulUni} alt="kabulUni" />
-                <h1>Kabul University</h1>
+          <div className="mt-[3rem] space-y-[1rem]">
+            <h1 className="text-[2.5rem] font-bold pb-[1rem] ">My Journey</h1>
+            <section className="space-y-[0.5rem] mb-[0.5rem]">
+              <div className="flex items-center ">
+                <Image
+                  src={kabulUni}
+                  alt="kabulUni"
+                  className="w-14 object-cover"
+                />
+                <h1 className="ml-2 mr-3 text-[1.5rem] font-bold">
+                  Kabul University
+                </h1>
                 <p>(2019-2023)</p>
               </div>
               <p>
@@ -30,10 +38,12 @@ function About() {
                 were heavily concentrated on software engineering.
               </p>
             </section>
-            <section>
-              <div className="flex">
-                <Image src={kabulUni} alt="kabulUni" />
-                <h1>Google UX Professional Certificate</h1>
+            <section className="mb-[0.5rem] space-y-[0.5rem]">
+              <div className="flex items-center">
+                <FcGoogle size={32} />
+                <h1 className="ml-2 mr-3 text-[1.5rem] font-bold">
+                  Google UX Professional Certificate
+                </h1>
                 <p>(6 months)</p>
               </div>
               <p>
@@ -44,14 +54,17 @@ function About() {
                 which helped me immensely in my goals.
               </p>
             </section>
-            <section>
-              <div className="flex">
+            <section className="space-y-[0.5rem] mb-[0.5rem]">
+              <div className="flex items-center">
                 <Image
                   src={dsic}
                   alt="digital solution and innovation center"
+                  className="w-32 object-cover"
                 />
-                <h1>Digital Solution and Innovation Center</h1>
-                <p>(9 months) internship</p>
+                <h1 className="text-[1.5rem] font-bold">
+                  Digital Solution & Innovation Center
+                </h1>
+                <p className="ml-2">(9 months) internship</p>
               </div>
               <p>
                 Digital Solution and Innovation Center is newly formed
@@ -68,16 +81,9 @@ function About() {
         </div>
       </div>
 
-      <div className="mt-[4rem] text-center lg:text-left  ">
-        <p className="mb-[1.5rem] text-[1.5rem] font-bold">Education</p>
-        <ul className="ml-4 list-inside list-disc space-y-[0.5rem]">
-          <li className="mr-10">Bachelor of Computer Science (2019-2023)</li>
-          <li>Google UX Professional Certificate</li>
-        </ul>
-      </div>
-
-      <Contact />
     </div>
+    <Contact />
+    </>
   );
 }
 

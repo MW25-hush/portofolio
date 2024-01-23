@@ -3,7 +3,7 @@
 import { Button } from "../molecules/button";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
-import clinicCover from "../../public/images/clinicCover.png";
+import clinicCover from "../../public/images/clinic/clinicCover.png";
 import { FaExternalLinkAlt } from "react-icons/fa";
 import { RiGithubLine } from "react-icons/ri";
 
