@@ -1,11 +1,11 @@
 import Image from "next/image";
-import morasilatBanner from "../../../public/images/morasilatHeroSection.png";
-import persona from "../../../public/images/persona.jpg";
-import wireframe from "../../../public/images/wirefame.jpg";
-import wireframe2 from "../../../public/images/wireframe2.jpg";
-import dashbboard from "../../../public/images/dashboard.png";
-import writePage from "../../../public/images/writeTwo.png";
-import archivePage from "../../../public/images/archive.png";
+import morasilatBanner from "../../../public/images/morasilat/morasilatHeroSection.png";
+import persona from "../../../public/images/morasilat/persona.jpg";
+import wireframe from "../../../public/images/morasilat/wirefame.jpg";
+import wireframe2 from "../../../public/images/morasilat/wireframe2.jpg";
+import dashbboard from "../../../public/images/morasilat/dashboard.png";
+import writePage from "../../../public/images/morasilat/writeTwo.png";
+import archivePage from "../../../public/images/morasilat/archive.png";
 
 function Morasilat() {
   return (

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import heroSection from "../../../public/images/heroElib.png";
+import heroSection from "../../../public/images/eLib/heroElib.png";
 import studentPersona from "../../../public/images/eLib/Students Persona.jpg";
 import professorPersona from "../../../public/images/eLib/Professor Persona.jpg";
 import wireframe from "../../../public/images/eLib/Wireframe.jpg";
