@@ -33,7 +33,7 @@ function Clinic() {
             intent={"tertiary"}
             width={"full"}
             handleClick={() =>
-              push("https://github.com/MW25-hush/Murasilat_v2.0")
+              push("https://github.com/MW25-hush/ClinicDatabase")
             }
             Icon={RiGithubLine}
           />
