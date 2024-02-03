@@ -9,15 +9,22 @@ import archivePage from "../../../public/images/morasilat/archive.png";
 
 function Morasilat() {
   return (
-    <div className="col-start-2 col-end-12">
+    <div className="animationMy col-start-2 col-end-12">
       <div className="mt-[3rem]">
         <Image src={morasilatBanner} alt="banner" />
       </div>
 
-      <div className="py-[1rem] space-y-[3rem] mt-[5rem]">
+      <iframe
+        src="https://www.youtube.com/embed/i0unxiBXC90"
+        className="mt-[3rem] h-[10%] w-full border border-black"
+      >
+        Your browser does not support this format
+      </iframe>
+
+      <div className="mt-[5rem] space-y-[3rem] py-[1rem]">
         <div className="text-center ">
           <h1 className="text-[2rem] font-bold  ">Project Overview</h1>
-          <p className="w-[55ch] mx-auto leading-[140%]">
+          <p className="mx-auto w-[55ch] leading-[140%]">
             Morasilat is a web application designed and developed for Kabul
             University. It is used for transmission of documents within the
             organization. It is a big step in digitalizing the most fundamental
@@ -27,7 +34,7 @@ function Morasilat() {
 
         <div>
           <h1 className="text-center text-[2rem] font-bold">My Role</h1>
-          <p className="w-[55ch] mx-auto leading-[140%] text-center">
+          <p className="mx-auto w-[55ch] text-center leading-[140%]">
             Throughout this project I had the responsibility of conducting
             research, making prototypes and mockups and developing the front-end
             of the application.
@@ -38,7 +45,7 @@ function Morasilat() {
           <h1 className="text-center text-[2rem] font-bold">
             Problem Statement
           </h1>
-          <p className="w-[55ch] mx-auto leading-[140%] text-center">
+          <p className="mx-auto w-[55ch] text-center leading-[140%]">
             Afghanistan is a third world country, thus in the technological
             aspect the country has not advanced yet unfortunately. The Morasilat
             application intends to facilitate and digitalize the transmission of
@@ -53,7 +60,7 @@ function Morasilat() {
 
         <div>
           <h1 className="text-center text-[2rem] font-bold">Solution</h1>
-          <p className="w-[55ch] mx-auto leading-[140%] text-center">
+          <p className="mx-auto w-[55ch] text-center leading-[140%]">
             I worked on the project over a span of 6 months. I did research and
             interviews with people of high authority and experts in the
             governmental procedures. I did usability testing several times to
@@ -65,7 +72,7 @@ function Morasilat() {
 
         <div>
           <h1 className="text-center text-[2rem] font-bold">User Research</h1>
-          <p className="w-[55ch] mx-auto leading-[140%] text-center">
+          <p className="mx-auto w-[55ch] text-center leading-[140%]">
             I used interview as a primary method for my research. I interviewed
             experts on the field of document transmitting and what I did get
             from there was a big frustration for me due to the fact there was no
@@ -85,32 +92,32 @@ function Morasilat() {
       </div>
 
       <div className="mt-[5rem]">
-        <h1 className="text-[2rem] font-bold -">Paper Wireframes</h1>
-        <div className="flex space-x-4 mt-[1.5rem] ">
+        <h1 className="- text-[2rem] font-bold">Paper Wireframes</h1>
+        <div className="mt-[1.5rem] flex space-x-4 ">
           <Image
             src={wireframe}
             alt="wireframe"
             height={800}
             width={600}
-            className="object-cover border border-black"
+            className="border border-black object-cover"
           />
           <Image
             src={wireframe2}
             alt="wireframeTwo"
             height={800}
             width={600}
-            className="object-cover border border-black"
+            className="border border-black object-cover"
           />
         </div>
       </div>
 
       <div className="mt-[5rem]">
-        <h1 className="text-[2rem] font-bold mb-[1.5rem] ">Hi-fi Mockups</h1>
+        <h1 className="mb-[1.5rem] text-[2rem] font-bold ">Hi-fi Mockups</h1>
         <div className="space-y-4 ">
           <Image
             src={dashbboard}
             alt="wireframe"
-            className="border border-black p-4 object-cover"
+            className="border border-black object-cover p-4"
           />
           <Image
             src={writePage}
@@ -125,9 +132,9 @@ function Morasilat() {
         </div>
       </div>
 
-      <div className="text-center mt-[5rem] mb-[3rem] ">
+      <div className="mb-[3rem] mt-[5rem] text-center ">
         <h1 className="text-[2rem] font-bold  ">What I&apos;ve learned</h1>
-        <p className="w-[55ch] mx-auto leading-[140%]">
+        <p className="mx-auto w-[55ch] leading-[140%]">
           Morasilat was my first real world project which right now it is used
           by hundreds of users. I implemented industry level standards such as
           design thinking process and lean agile development method to work on

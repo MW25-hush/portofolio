@@ -3,6 +3,8 @@ import Morasilat from "../components/stories/morasilat";
 import myPhoto from "../public/images/myPhoto.jpg";
 import ELib from "@/components/stories/eLib";
 import Clinic from "@/components/stories/dentalClinic";
+import ElectronicAf from "@/components/stories/electronicAf";
+import MovieTime from "@/components/stories/movie";
 
 const icons = [
   "figma",
@@ -67,6 +69,8 @@ export default function Home() {
         <Morasilat />
         <ELib />
         <Clinic />
+        <ElectronicAf />
+        <MovieTime />
       </div>
     </>
   );
