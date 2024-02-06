@@ -39,6 +39,7 @@ const buttonCVA = cva(["rounded", "font-bold", "capitalize"], {
 });
 
 interface ButtonProps extends VariantProps<typeof buttonCVA> {
+  overrideStyles?: string;
   /**
    * Button contents
    */
@@ -71,6 +72,7 @@ export const Button = ({
   size,
   label,
   width,
+  overrideStyles,
   handleClick,
   Icon,
   ...props
@@ -80,14 +82,15 @@ export const Button = ({
       type={type}
       className={cx(buttonCVA({ intent, size, width }), {
         "bg-gray-400": loading,
+        [overrideStyles || ""]: overrideStyles !== undefined,
       })}
       {...props}
       onClick={handleClick}
       disabled={loading}
     >
-      <span className="flex gap-2 justify-center items-center">
+      <span className="flex items-center justify-center gap-2">
         {label}
-        {Icon && <Icon size={intent === "tertiary" ? 32 : 16}/>}
+        {Icon && <Icon size={intent === "tertiary" ? 32 : 16} />}
       </span>
     </button>
   );

@@ -1,3 +1,5 @@
+"use client"
+
 import React from "react";
 import { Button } from "../molecules/button";
 import { FaExternalLinkAlt } from "react-icons/fa";
