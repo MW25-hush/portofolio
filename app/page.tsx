@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 import Morasilat from "../components/stories/morasilat";
 import myPhoto from "../public/images/myPhoto.jpg";
@@ -5,6 +7,12 @@ import ELib from "@/components/stories/eLib";
 import Clinic from "@/components/stories/dentalClinic";
 import ElectronicAf from "@/components/stories/electronicAf";
 import MovieTime from "@/components/stories/movie";
+import { MdOutlineLightMode } from "react-icons/md";
+import { useState } from "react";
+import Hero from "@/components/organisms/Hero";
+import Skills from "@/components/organisms/Skills";
+import Encryption from "@/components/organisms/Encryption";
+import Projects from "@/components/organisms/Projects";
 
 const icons = [
   "figma",
@@ -20,7 +28,10 @@ const icons = [
 ];
 
 export default function Home() {
+  const [darkTheme, setTheme] = useState(false);
   return (
+
+    !darkTheme ?
     <>
       <div className="animationMy col-start-1 col-end-5 mt-16 h-[100vh]  lg:col-start-3 lg:col-end-11">
         <div className="grid grid-cols-4 gap-4 lg:grid-cols-8  lg:items-center lg:gap-0 ">
@@ -73,5 +84,15 @@ export default function Home() {
         <MovieTime />
       </div>
     </>
+    : 
+
+    <main className="h-full w-full ">
+    <div className="flex flex-col gap-20">
+      <Hero />
+      <Skills />
+      {/* add about and certificate */}
+      <Projects />
+    </div>
+  </main>
   );
 }
