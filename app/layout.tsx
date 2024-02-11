@@ -21,11 +21,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body
-        className={`${bebas_neve.variable} `}
-      >
-        {children}
-      </body>
+      <body className={`${bebas_neve.variable} `}>{children}</body>
     </html>
   );
 }

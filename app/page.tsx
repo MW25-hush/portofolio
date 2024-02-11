@@ -15,6 +15,7 @@ import Encryption from "@/components/organisms/Encryption";
 import Projects from "@/components/organisms/Projects";
 import Navbar from "@/components/organisms/navbar";
 import DarkNavbar from "@/components/organisms/navbarDarkTheme";
+import StarsCanvas from "@/components/organisms/StarBackground";
 
 const icons = [
   "figma",
@@ -34,7 +35,7 @@ export default function Home() {
   return !darkTheme ? (
     <>
       <div className="grid grid-cols-4 font-helvetica lg:grid-cols-12">
-        <Navbar />
+        <Navbar setTheme={setTheme} />
 
         <div className="animationMy col-start-1 col-end-5 mt-16 h-[100vh]  lg:col-start-3 lg:col-end-11">
           <div className="grid grid-cols-4 gap-4 lg:grid-cols-8  lg:items-center lg:gap-0 ">
@@ -91,8 +92,10 @@ export default function Home() {
     </>
   ) : (
     <main className="h-full w-full overflow-x-hidden overflow-y-scroll bg-[#030014] ">
+      <StarsCanvas />
+
       <div className="flex flex-col gap-20">
-        <DarkNavbar />
+        <DarkNavbar setTheme={setTheme} />
         <Hero />
         <Skills />
         {/* add about and certificate */}

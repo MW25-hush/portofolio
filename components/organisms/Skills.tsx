@@ -8,7 +8,7 @@ const Skills = () => {
     <section
       id="skills"
       className="relative flex h-full flex-col items-center justify-center gap-3 overflow-hidden py-20 pb-80"
-      style={{ transform: "scale(0.9" }}
+      style={{ transform: "scale(0.9)" }}
     >
       <SkillText />
 
