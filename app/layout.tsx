@@ -22,9 +22,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${bebas_neve.variable} grid grid-cols-4 font-helvetica lg:grid-cols-12`}
+        className={`${bebas_neve.variable} `}
       >
-        <Navbar />
         {children}
       </body>
     </html>

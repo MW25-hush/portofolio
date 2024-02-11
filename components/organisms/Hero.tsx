@@ -1,16 +1,15 @@
 import React from "react";
 import HeroContent from "../molecules/HeroContent";
-
 const Hero = () => {
   return (
-    <div className="relative flex flex-col h-full w-full" id="about-me">
+    <div className="relative flex h-full w-full flex-col" id="about-me">
       <video
         autoPlay
         muted
         loop
-        className="rotate-180 absolute top-[-340px]  h-full w-full left-0 z-[1] object-cover "
+        className="absolute left-0 top-[-340px]  z-[1] h-full w-full rotate-180 object-cover "
       >
-        <source src="/blackhole.webm" type="video/webm" />
+        <source src="/darkTheme/blackhole.webm" type="video/webm" />
       </video>
       <HeroContent />
     </div>

@@ -1,30 +1,30 @@
-import { Socials } from "@/constants";
+// import { Socials } from "@/constants";
 import Image from "next/image";
 import React from "react";
 
-const Navbar = () => {
+const DarkNavbar = () => {
   return (
-    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
-      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
+    <div className="fixed top-0 z-50 h-[65px] w-full bg-[#03001417] px-10 shadow-lg shadow-[#2A0E61]/50 backdrop-blur-md">
+      <div className="m-auto flex h-full w-full flex-row items-center justify-between px-[10px]">
         <a
           href="#about-me"
-          className="h-auto w-auto flex flex-row items-center"
+          className="flex h-auto w-auto flex-row items-center"
         >
           <Image
-            src="/NavLogo.png"
+            src="/darkTheme/NavLogo.png"
             alt="logo"
             width={70}
             height={70}
-            className="cursor-pointer hover:animate-slowspin"
+            className="hover:animate-slowspin cursor-pointer"
           />
 
-          <span className="font-bold ml-[10px] hidden md:block text-gray-300">
+          <span className="ml-[10px] hidden font-bold text-gray-300 md:block">
             WebChain Dev
           </span>
         </a>
 
-        <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
-          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200">
+        <div className="flex h-full w-[500px] flex-row items-center justify-between md:mr-20">
+          <div className="mr-[15px] flex h-auto w-full items-center justify-between rounded-full border border-[#7042f861] bg-[#0300145e] px-[20px] py-[10px] text-gray-200">
             <a href="#about-me" className="cursor-pointer">
               About me
             </a>
@@ -38,7 +38,7 @@ const Navbar = () => {
         </div>
 
         <div className="flex flex-row gap-5">
-          {Socials.map((social) => (
+          {/* {Socials.map((social) => (
             <Image
               src={social.src}
               alt={social.name}
@@ -46,11 +46,11 @@ const Navbar = () => {
               width={24}
               height={24}
             />
-          ))}
+          ))} */}
         </div>
       </div>
     </div>
   );
 };
 
-export default Navbar;
+export default DarkNavbar;

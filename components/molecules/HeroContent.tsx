@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import mainIcon from '../../public/darkTheme/mainIconsdark.svg'
 import { motion } from "framer-motion";
 import {
   slideInFromLeft,
@@ -63,7 +63,7 @@ const HeroContent = () => {
         className="flex h-full w-full items-center justify-center"
       >
         <Image
-          src="/mainIconsdark.svg"
+          src={mainIcon}
           alt="work icons"
           height={650}
           width={650}
