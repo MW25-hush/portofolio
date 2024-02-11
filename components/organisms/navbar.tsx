@@ -9,7 +9,7 @@ import { MdOutlineLightMode } from "react-icons/md";
 export default function Navbar({
   setTheme,
 }: {
-  setTheme: Dispatch<SetStateAction<boolean>>;
+  setTheme?: Dispatch<SetStateAction<boolean>>;
 }) {
   const pathname = usePathname();
   return (
@@ -35,7 +35,7 @@ export default function Navbar({
 
         <MdOutlineLightMode
           size={24}
-          onClick={() => setTheme((theme: boolean) => !theme)}
+          onClick={() => setTheme && setTheme((theme: boolean) => !theme)}
           className="cursor-pointer hover:scale-105"
           title="Dark Theme"
         />

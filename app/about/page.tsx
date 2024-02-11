@@ -14,10 +14,14 @@ import seventhCourse from "../../public/certificates/7.jpg";
 import udemy from "../../public/certificates/Udemy.jpg";
 import badgeCertificate from "@/public/certificates/badgeCertificate.jpg";
 import Link from "next/link";
+import Navbar from "@/components/organisms/navbar";
 
 function About() {
   return (
     <>
+      <div className="grid grid-cols-12">
+        <Navbar />
+      </div>
       <div className="col-start-1 col-end-5 mt-16 lg:col-start-2 lg:col-end-12 ">
         <div className=" mx-auto max-w-5xl text-center">
           <h1 className="mb-[1.5rem] text-[2.5rem] font-bold">About</h1>
@@ -109,9 +113,11 @@ function About() {
           </div>
         </div>
 
-        <section className="mt-[3rem]">
-          <h1 className="mb-[1.5rem] text-[1.5rem] font-bold">Certificates</h1>
-          <div className="flex flex-wrap gap-[1rem]">
+        <section className="mt-[3rem] ">
+          <h1 className="mb-[1.5rem] text-center text-[1.5rem] font-bold">
+            Certificates
+          </h1>
+          <div className="flex flex-wrap justify-center gap-[1rem]">
             <Link
               target="_blank"
               href="https://www.coursera.org/account/accomplishments/verify/26GQUBDNMFY2"
@@ -121,7 +127,7 @@ function About() {
                 alt="first course"
                 height={400}
                 width={400}
-                className="hover:scale-105 transition-transform duration-500 ease-out  "
+                className="transition-transform duration-500 ease-out hover:scale-105  "
               />
             </Link>
             <Link

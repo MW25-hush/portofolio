@@ -7,15 +7,14 @@ import ELib from "@/components/stories/eLib";
 import Clinic from "@/components/stories/dentalClinic";
 import ElectronicAf from "@/components/stories/electronicAf";
 import MovieTime from "@/components/stories/movie";
-import { MdOutlineLightMode } from "react-icons/md";
 import { useState } from "react";
 import Hero from "@/components/organisms/Hero";
 import Skills from "@/components/organisms/Skills";
-import Encryption from "@/components/organisms/Encryption";
 import Projects from "@/components/organisms/Projects";
 import Navbar from "@/components/organisms/navbar";
 import DarkNavbar from "@/components/organisms/navbarDarkTheme";
 import StarsCanvas from "@/components/organisms/StarBackground";
+import About from "@/components/organisms/About";
 
 const icons = [
   "figma",
@@ -31,7 +30,7 @@ const icons = [
 ];
 
 export default function Home() {
-  const [darkTheme, setTheme] = useState(false);
+  const [darkTheme, setTheme] = useState(true);
   return !darkTheme ? (
     <>
       <div className="grid grid-cols-4 font-helvetica lg:grid-cols-12">
@@ -99,6 +98,8 @@ export default function Home() {
         <Hero />
         <Skills />
         {/* add about and certificate */}
+        <About/>
+
         <Projects />
       </div>
     </main>

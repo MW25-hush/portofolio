@@ -73,13 +73,9 @@ function Contact() {
               </div>
             </Link>
             <div className="flex items-center space-x-[0.5rem] pl-2 ">
-              <Button
-                handleClick={() => Download()}
-                label="Resume"
-                overrideStyles="bg-inherit text-black py-0"
-              />
-              {/* <button onClick={() => Download()}>Resume</button> */}
-
+              <p className="" onClick={() => Download()}>
+                Resume
+              </p>
               <PiReadCvLogoFill size={24} className="text-primary" />
             </div>
           </div>

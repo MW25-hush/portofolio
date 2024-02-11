@@ -33,6 +33,9 @@ function MovieTime() {
               intent={"secondary"}
               width={"full"}
               Icon={FaExternalLinkAlt}
+              handleClick={() => {
+                push("https://movie-time.vercel.app")
+              }}
             />
             <Button
               label="Source Code"
