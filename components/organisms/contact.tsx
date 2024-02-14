@@ -3,41 +3,7 @@
 import Link from "next/link";
 import { FaClock, FaEnvelope, FaGithub, FaLinkedin } from "react-icons/fa6";
 
-import { PiReadCvLogoFill } from "react-icons/pi";
-import { Button } from "../molecules/button";
-
 function Contact() {
-  const Download = async () => {
-    try {
-      const response = await fetch("/api/file");
-      if (!response.ok) {
-        throw new Error(`HTTP error! Status: ${response.status}`);
-      }
-
-      const blob = await response.blob();
-      const url = window.URL.createObjectURL(blob);
-
-      // Create a temporary link element
-      const link = document.createElement("a");
-      link.href = url;
-      link.download = "1.jpg";
-
-      // Append the link to the document body
-      document.body.appendChild(link);
-
-      // Trigger a click on the link to start the download
-      link.click();
-
-      // Remove the link from the document
-      document.body.removeChild(link);
-
-      // Release the object URL
-      window.URL.revokeObjectURL(url);
-    } catch (error) {
-      console.error("Error downloading file:", error);
-    }
-  };
-
   return (
     <div className="col-span-full mt-[2rem] rounded-[1rem] bg-secondary px-[3rem] py-[1.5rem] text-primary lg:mx-0">
       <div className="mb-[1.5rem] flex items-center justify-center text-center lg:space-x-[1rem] lg:text-left ">
@@ -72,12 +38,12 @@ function Contact() {
                 <FaGithub size={24} className="text-primary" />
               </div>
             </Link>
-            <div className="flex items-center space-x-[0.5rem] pl-2 ">
+            {/* <div className="flex items-center space-x-[0.5rem] pl-2 ">
               <p className="" onClick={() => Download()}>
                 Resume
               </p>
               <PiReadCvLogoFill size={24} className="text-primary" />
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

@@ -18,8 +18,24 @@
   }
 }
 
+@keyframes imagesFadiIn {
+  /* 0% {
+    opacity: 0;
+  } */
+
+  100% {
+    opacity: 1;
+  }
+}
+
 .animationMy {
   animation: fadeIn 2s ease-in-out;
+}
+
+.animationOffset {
+  opacity: 0;
+  animation: imagesFadiIn 2s ease-in-out forwards;
+  animation-delay: 2s;
 }
 
 .Welcome-text {
