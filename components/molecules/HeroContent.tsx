@@ -7,7 +7,6 @@ import {
   slideInFromRight,
   slideInFromTop,
 } from "@/utlis/motion";
-import { HiSparkles } from "react-icons/hi";
 import Image from "next/image";
 
 const HeroContent = () => {
@@ -15,9 +14,9 @@ const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="z-[20] mt-40 flex w-full flex-row items-center justify-center px-20"
+      className="z-[20] mt-40 flex w-full flex-row  items-center justify-center px-20"
     >
-      <div className="m-auto flex h-full w-full flex-col justify-center gap-5 text-start">
+      <div className="m-auto flex h-full w-full flex-col justify-center gap-5  text-start">
         <motion.div
           variants={slideInFromTop}
           className="Welcome-box border border-[#7042f88b] px-[7px] py-[8px] opacity-[0.9]"
@@ -54,7 +53,7 @@ const HeroContent = () => {
 
       <motion.div
         variants={slideInFromRight(0.8)}
-        className="flex h-full w-full items-center justify-center"
+        className=" hidden h-full w-full items-center justify-center md:flex"
       >
         <Image src={mainIcon} alt="work icons" height={650} width={650} />
       </motion.div>
