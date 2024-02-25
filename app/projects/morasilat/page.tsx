@@ -9,14 +9,14 @@ import archivePage from "../../../public/images/morasilat/archive.png";
 
 function Morasilat() {
   return (
-    <div className="animationMy col-start-2 col-end-12">
-      <div className="mt-[3rem]">
-        <Image src={morasilatBanner} alt="banner" />
+    <div className="animationMy col-start-2 col-end-12 ">
+      <div className=" mt-[3rem]">
+        <Image className="mx-auto" src={morasilatBanner} alt="banner" />
       </div>
 
       <iframe
         src="https://www.youtube.com/embed/i0unxiBXC90"
-        className="mt-[3rem] h-[10%] w-full border border-black"
+        className="mx-auto mt-[3rem] h-[600px] w-11/12 border border-black"
       >
         Your browser does not support this format
       </iframe>

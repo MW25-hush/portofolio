@@ -98,7 +98,6 @@ export default function Home() {
         <DarkNavbar setTheme={setTheme} />
         <Hero />
         <Skills />
-        {/* add about and certificate */}
         <About />
 
         <Projects />
