@@ -71,12 +71,12 @@ export default function Navbar({
           about
         </Link>
 
-        <MdOutlineLightMode
+        {/* <MdOutlineLightMode
           size={24}
           onClick={() => setTheme && setTheme((theme: boolean) => !theme)}
           className="cursor-pointer hover:scale-105"
           title="Dark Theme"
-        />
+        /> */}
       </div>
     </div>
   );
