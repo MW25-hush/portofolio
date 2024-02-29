@@ -46,7 +46,7 @@ export default function Navbar({
   };
   return (
     <div className="col-span-4  mx-4 mt-8 flex items-center justify-between font-bebas_neve lg:col-start-2  lg:col-end-12 lg:mx-0 ">
-      <div className=" text-[2.5rem] tracking-[0.05em]">M@W</div>
+      <div className=" text-[2.5rem] tracking-[0.05em] ">M@W</div>
       <div className="flex items-center space-x-8 font-helvetica text-lg capitalize ">
         <Button
           label="Resume"
