@@ -39,8 +39,8 @@ export default function Home() {
               Bridging Code and Creativity as a React Alchemist & UI/UX Maestro
             </h1>
             <p className=" mx-auto max-w-[80%] md:max-w-[60%] lg:mx-0  lg:max-w-full lg:text-[1.25rem]">
-              Hello, I&apos;m Mohammad Mehdi Wahid. A passionate creator weaving
-              Digital magic with pixels and code.
+              Hello, I&apos;m Mohammad Mehdi Wahid. I Sketch my own ideas, craft
+              my own solutions and bring them to life with code magic!
             </p>
           </div>
           <div className="order-1 col-span-4 mx-auto mt-2 lg:order-none ">

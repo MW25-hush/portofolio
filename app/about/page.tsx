@@ -40,10 +40,9 @@ function About() {
 
   return (
     <>
-      <div className="grid grid-cols-12">
-        <Navbar />
-        <div className="col-start-1 col-end-5 mt-16 lg:col-start-2 lg:col-end-12 ">
-          <div className="max-w-5xl">
+      <div className="col-start-1 col-end-5 mt-16 lg:col-start-2 lg:col-end-12">
+        <div className="flex space-x-8 ">
+          <div>
             <h1 className="mb-[1.5rem] text-[2.5rem] font-bold">About</h1>
             <ul className="list-disc space-y-4 text-[1.25rem] marker:text-gray-400">
               <li>
@@ -63,139 +62,134 @@ function About() {
                 Morasilat offers a seamless transition to a modern, efficient,
                 and accessible platform.
               </li>
-              {/* <li>
-                My skill set extends beyond technical expertise to a genuine
-                love for sketching and ideation, ensuring that each project not
-                only meets functional requirements but also encapsulates beauty
-                and usability. With a knack for bringing concepts to life, I
-                harness the magic of Next.js to create dynamic and responsive
-                applications. I look forward to contributing my skills and
-                passion to further elevate the digital landscape, fostering
-                innovation and efficiency in every project
-              </li> */}
             </ul>
-            <div className="mt-[3rem] space-y-[1rem] ">
-              <h1 className="pb-[1rem] text-[2.5rem] font-bold ">My Journey</h1>
-              <section className="mb-[0.5rem] space-y-[0.5rem] ">
-                <div className="flex items-center justify-between ">
-                  <div className="flex items-center space-x-2">
-                    <Image
-                      src={kabulUni}
-                      alt="kabulUni"
-                      className="w-14 object-cover"
-                    />
-                    <h1 className="text-[1.5rem] font-bold">
-                      Kabul University
-                    </h1>
-                  </div>
-                  <p className="text-gray-500">(2019-2023)</p>
-                </div>
-                <ul className="list-inside list-disc pt-2 marker:text-gray-400">
-                  <li>
-                    I achieved my bachelor degree from Kabul University with a
-                    GPA of 3.7 . My courses were heavily concentrated on
-                    software engineering.
-                  </li>
-                </ul>
-              </section>
-              <section className="mb-[0.5rem] space-y-[0.5rem]">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center space-x-2 ">
-                    <FcGoogle size={48} />
-                    <h1 className="ml-2 mr-3 text-[1.5rem] font-bold">
-                      Google UX Professional Certificate
-                    </h1>
-                  </div>
-                  <p className="text-gray-500">(6 months)</p>
-                </div>
-                <ul className="list-inside list-disc pt-2 marker:text-gray-400">
-                  <li>
-                    During my third year I slowly started to find a passion for
-                    UI/UX after a year of experience with front-end development.
-                  </li>
-                  <li>
-                    I want to sketch my own ideas, craft feasible solutions and
-                    bring them to life.
-                  </li>
-                  <li>
-                    I took the Google UX Certificate program which helped me
-                    immensely in my goals.
-                  </li>
-                </ul>
-              </section>
-              <section className="mb-[0.5rem] space-y-[0.5rem]">
-                <div className="flex items-center justify-between">
-                  <div className="flex items-center">
-                    <Image
-                      src={dsic}
-                      alt="digital solution and innovation center"
-                      className="w-32 object-cover"
-                    />
-                    <h1 className="text-[1.5rem] font-bold ">
-                      Digital Solution & Innovation Center
-                    </h1>
-                  </div>
-                  <p className="ml-2">(9 months) Internship</p>
-                </div>
-                <ul className="list-inside list-disc marker:text-gray-400">
-                  <li>
-                    Digital Solution and Innovation Center is an organization
-                    within the Kabul University, which it’s sole purpose is to
-                    digitalize Afghanistan.
-                  </li>
-                  <li>I have the honor to be one of it’s founding members.</li>
-                  <li>
-                    I had an internship where I did volunteer work for the
-                    university.
-                  </li>
-                </ul>
-              </section>
-            </div>
           </div>
-
-          <section id="carousel" className="mt-4 ">
-            <h1 className="text-[2.5rem] font-bold ">Certificates</h1>
-
-            {/*  */}
-            <div
-              key={carousel.number}
-              className={`${carousel.state} flex items-center justify-center space-x-4`}
-            >
-              <BiChevronLeft
-                size={48}
-                className="rounded-full border"
-                onClick={() =>
-                  setCarousel((prev) => ({
-                    state: "rightAnimation",
-                    number: prev.number !== 0 ? prev.number - 1 : prev.number,
-                  }))
-                }
-              />
-              <Link href={carouselArray[carousel.number].href} target="_blank">
+          <Image
+            src="/images/photo.jpg"
+            alt="photo"
+            width={300}
+            height={300}
+            className="rounded"
+          />
+        </div>
+        <div className="mt-[3rem] space-y-[1rem] ">
+          <h1 className="pb-[1rem] text-[2.5rem] font-bold ">My Journey</h1>
+          <section className="mb-[0.5rem] space-y-[0.5rem] ">
+            <div className="flex items-center justify-between ">
+              <div className="flex items-center space-x-2">
                 <Image
-                  src={`/certificates/${carouselArray[carousel.number].src}`}
-                  alt=""
-                  height={650}
-                  width={650}
-                  className="transition-transform duration-500 ease-out hover:scale-105"
+                  src={kabulUni}
+                  alt="kabulUni"
+                  className="w-14 object-cover"
                 />
-              </Link>
-              <BiChevronRight
-                size={48}
-                className="rounded-full border"
-                onClick={() =>
-                  setCarousel((prev) => ({
-                    state: "leftAnimation",
-                    number:
-                      prev.number !== carouselArray.length - 1
-                        ? prev.number + 1
-                        : prev.number,
-                  }))
-                }
-              />
+                <h1 className="text-[1.5rem] font-bold">Kabul University</h1>
+              </div>
+              <p className="text-gray-500">(2019-2023)</p>
             </div>
+            <ul className="list-inside list-disc pt-2 marker:text-gray-400">
+              <li>
+                I achieved my bachelor degree from Kabul University with a GPA
+                of 3.7 . My courses were heavily concentrated on software
+                engineering.
+              </li>
+            </ul>
+          </section>
+          <section className="mb-[0.5rem] space-y-[0.5rem]">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center space-x-2 ">
+                <FcGoogle size={48} />
+                <h1 className="ml-2 mr-3 text-[1.5rem] font-bold">
+                  Google UX Professional Certificate
+                </h1>
+              </div>
+              <p className="text-gray-500">(6 months)</p>
+            </div>
+            <ul className="list-inside list-disc pt-2 marker:text-gray-400">
+              <li>
+                During my third year I slowly started to find a passion for
+                UI/UX after a year of experience with front-end development.
+              </li>
+              <li>
+                I want to sketch my own ideas, craft feasible solutions and
+                bring them to life.
+              </li>
+              <li>
+                I took the Google UX Certificate program which helped me
+                immensely in my goals.
+              </li>
+            </ul>
+          </section>
+          <section className="mb-[0.5rem] space-y-[0.5rem]">
+            <div className="flex items-center justify-between">
+              <div className="flex items-center">
+                <Image
+                  src={dsic}
+                  alt="digital solution and innovation center"
+                  className="w-32 object-cover"
+                />
+                <h1 className="text-[1.5rem] font-bold ">
+                  Digital Solution & Innovation Center
+                </h1>
+              </div>
+              <p className="ml-2">(9 months) Internship</p>
+            </div>
+            <ul className="list-inside list-disc marker:text-gray-400">
+              <li>
+                Digital Solution and Innovation Center is an organization within
+                the Kabul University, which it’s sole purpose is to digitalize
+                Afghanistan.
+              </li>
+              <li>I have the honor to be one of it’s founding members.</li>
+              <li>
+                I had an internship where I did volunteer work for the
+                university.
+              </li>
+            </ul>
           </section>
         </div>
+
+        <section id="carousel" className="mt-4 ">
+          <h1 className="text-[2.5rem] font-bold ">Certificates</h1>
+
+          {/*  */}
+          <div
+            key={carousel.number}
+            className={`${carousel.state} flex items-center justify-center space-x-4`}
+          >
+            <BiChevronLeft
+              size={48}
+              className="rounded-full border"
+              onClick={() =>
+                setCarousel((prev) => ({
+                  state: "rightAnimation",
+                  number: prev.number !== 0 ? prev.number - 1 : prev.number,
+                }))
+              }
+            />
+            <Link href={carouselArray[carousel.number].href} target="_blank">
+              <Image
+                src={`/certificates/${carouselArray[carousel.number].src}`}
+                alt=""
+                height={650}
+                width={650}
+                className="transition-transform duration-500 ease-out hover:scale-105"
+              />
+            </Link>
+            <BiChevronRight
+              size={48}
+              className="rounded-full border"
+              onClick={() =>
+                setCarousel((prev) => ({
+                  state: "leftAnimation",
+                  number:
+                    prev.number !== carouselArray.length - 1
+                      ? prev.number + 1
+                      : prev.number,
+                }))
+              }
+            />
+          </div>
+        </section>
       </div>
 
       <Contact />

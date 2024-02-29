@@ -1,6 +1,4 @@
 import Image from "next/image";
-import dashbboard from "../../../public/images/morasilat/dashboard.png";
-import writePage from "../../../public/images/morasilat/writeTwo.png";
 import archivePage from "../../../public/images/morasilat/archive.png";
 
 function Morasilat() {
@@ -112,34 +110,34 @@ function Morasilat() {
         </div>
       </section>
 
-      <div className="mt-[5rem]">
+      <section className="mx-auto mt-[5rem] max-w-5xl">
         <h1 className="text-[2rem] font-bold">Persona</h1>
         <div>
           <Image
             src="/images/morasilat/personaOne.png"
             alt="persona"
-            className="mx-auto mt-2 rounded-lg border object-cover"
+            className=" mt-2 rounded-lg border object-cover"
             width={1000}
             height={1000}
           />{" "}
           <Image
             src="/images/morasilat/personaTwo.png"
             alt="persona"
-            className="mx-auto mt-2 rounded-lg border object-cover"
+            className=" mt-2 rounded-lg border object-cover"
             width={1000}
             height={1000}
           />{" "}
           <Image
             src="/images/morasilat/personaThree.png"
             alt="persona"
-            className="mx-auto mt-2 rounded-lg border object-cover"
+            className=" mt-2 rounded-lg border object-cover"
             width={1000}
             height={1000}
           />
         </div>
-      </div>
+      </section>
 
-      <div className="mt-[5rem]">
+      <section className="mx-auto mt-[5rem] max-w-5xl">
         <h1 className="- text-[2rem] font-bold">Paper Wireframes</h1>
         <div className="mt-[1.5rem] flex space-x-4 ">
           <Image
@@ -147,35 +145,41 @@ function Morasilat() {
             alt="wireframe"
             height={1000}
             width={1000}
-            className="mx-auto mt-2 rounded-lg border object-cover"
+            className="mt-2 rounded-lg border object-cover"
           />
         </div>
-      </div>
+      </section>
 
-      <div className="mt-[5rem]">
+      <section className="mx-auto mt-[5rem] max-w-5xl">
         <h1 className="mb-[1.5rem] text-[2rem] font-bold ">Hi-fi Mockups</h1>
         <div className="space-y-4 ">
           <Image
-            src={dashbboard}
+            src="/images/morasilat/dashboard.png"
             alt="hi-fi mockup"
-            className="mx-auto rounded-lg border object-cover p-4"
+            className=" rounded-lg border object-cover p-4"
+            width={1000}
+            height={1000}
           />
           <Image
-            src={writePage}
+            src="/images/morasilat/write.png"
             alt="hi-fi mockup"
-            className="mx-auto rounded-lg border object-cover p-4"
+            className=" rounded-lg border object-cover p-4"
+            width={1000}
+            height={1000}
           />
           <Image
-            src={archivePage}
+            src="/images/morasilat/archive.png"
             alt="hi-fi mockup"
-            className="mx-auto rounded-lg border object-cover p-4"
+            className=" rounded-lg border object-cover p-4"
+            width={1000}
+            height={1000}
           />
         </div>
-      </div>
+      </section>
 
-      <div className="mb-[3rem] mt-[5rem] text-center ">
+      <div className="mx-auto mb-[3rem] mt-[5rem] max-w-5xl  ">
         <h1 className="text-[2rem] font-bold  ">What I&apos;ve learned</h1>
-        <p className="mx-auto w-[55ch] leading-[140%]">
+        <p className=" w-[55ch] leading-[140%]">
           Morasilat was my first real world project which right now it is used
           by hundreds of users. I implemented industry level standards such as
           design thinking process and lean agile development method to work on
