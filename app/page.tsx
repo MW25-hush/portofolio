@@ -7,13 +7,6 @@ import ELib from "@/components/stories/eLib";
 import Clinic from "@/components/stories/dentalClinic";
 import ElectronicAf from "@/components/stories/electronicAf";
 import MovieTime from "@/components/stories/movie";
-import { useState } from "react";
-import Hero from "@/components/organisms/Hero";
-import Skills from "@/components/organisms/Skills";
-import Projects from "@/components/organisms/Projects";
-import DarkNavbar from "@/components/organisms/navbarDarkTheme";
-import StarsCanvas from "@/components/organisms/StarBackground";
-import About from "@/components/organisms/About";
 
 const icons = [
   "figma",
@@ -29,8 +22,7 @@ const icons = [
 ];
 
 export default function Home() {
-  const [darkTheme, setTheme] = useState(false);
-  return !darkTheme ? (
+  return (
     <>
       <div className=" col-start-1 col-end-5 mt-16 h-[100vh]  lg:col-start-3 lg:col-end-11">
         <div className=" animationMy grid grid-cols-4 gap-4 lg:grid-cols-8  lg:items-center lg:gap-0 ">
@@ -84,16 +76,5 @@ export default function Home() {
         <MovieTime />
       </div>
     </>
-  ) : (
-    <main className="h-full w-full overflow-x-hidden overflow-y-scroll bg-[#030014] ">
-      <StarsCanvas />
-      <div className="flex flex-col gap-20">
-        <DarkNavbar setTheme={setTheme} />
-        <Hero />
-        <Skills />
-        <About />
-        <Projects />
-      </div>
-    </main>
   );
 }
