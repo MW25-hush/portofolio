@@ -1,5 +1,4 @@
 import Image from "next/image";
-import archivePage from "../../../public/images/morasilat/archive.png";
 
 function Morasilat() {
   return (
@@ -138,6 +137,7 @@ function Morasilat() {
       </section>
 
       <section className="mx-auto mt-[5rem] max-w-5xl">
+        <div></div>
         <h1 className="- text-[2rem] font-bold">Paper Wireframes</h1>
         <div className="mt-[1.5rem] flex space-x-4 ">
           <Image
@@ -148,6 +148,17 @@ function Morasilat() {
             className="mt-2 rounded-lg border object-cover"
           />
         </div>
+      </section>
+
+      <section className="mx-auto mt-[5rem] max-w-5xl">
+        <h1 className="text-[2rem] font-bold">Design System</h1>
+        <Image
+          src="/images/morasilat/styleGuide.png"
+          alt="Design System"
+          width={1000}
+          height={1000}
+          className="mt-2 rounded-lg border object-cover"
+        />
       </section>
 
       <section className="mx-auto mt-[5rem] max-w-5xl">
@@ -177,13 +188,33 @@ function Morasilat() {
         </div>
       </section>
 
+      <section id="research" className="mx-auto mt-[5rem] max-w-5xl">
+        <h1 className="text-[2rem] font-bold">Research</h1>
+        <div className="w-10 border-b-4 border-black"></div>
+        <p className="w-[55ch] pt-2">
+          We took on a mission that was to fix and redesign an existing
+          application which was incomplete in functionality. The main focus was
+          to make the make the application{" "}
+          <span className="font-bold">USEFUL.</span>
+        </p>
+
+        <Image
+          src="/images/morasilat/designProblem.png"
+          alt="solution"
+          height={1000}
+          width={1000}
+          className="mt-2 rounded-lg border"
+        />
+      </section>
       <div className="mx-auto mb-[3rem] mt-[5rem] max-w-5xl  ">
         <h1 className="text-[2rem] font-bold  ">What I&apos;ve learned</h1>
         <p className=" w-[55ch] leading-[140%]">
           Morasilat was my first real world project which right now it is used
           by hundreds of users. I implemented industry level standards such as
-          design thinking process and lean agile development method to work on
-          such a massive project.
+          design thinking process,Atomic Design System,Next Js Enterprise Grade
+          Boilerplate,Storybook, lean agile development method to work on such a
+          massive project. Currently it is used by the whole Kabul University in
+          a testing environment in order to be full implemented.
         </p>
       </div>
     </div>
