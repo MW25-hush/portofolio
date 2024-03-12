@@ -1,4 +1,4 @@
-"use client"
+"use client";
 
 import React from "react";
 import { Button } from "../molecules/button";
@@ -6,7 +6,7 @@ import { FaExternalLinkAlt } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import { RiGithubLine } from "react-icons/ri";
 import Image from "next/image";
-import electronicAF from '@/public/images/electronic/electronic.png'
+import electronicAF from "@/public/images/electronic/HomePage.png";
 
 function ElectronicAf() {
   const { push } = useRouter();
