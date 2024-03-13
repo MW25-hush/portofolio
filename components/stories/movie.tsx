@@ -3,7 +3,7 @@
 import React from "react";
 import { Button } from "../molecules/button";
 import { useRouter } from "next/navigation";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaChevronRight, FaExternalLinkAlt } from "react-icons/fa";
 import { RiGithubLine } from "react-icons/ri";
 import movieCover from "@/public/images/movieDB/MovieDB.png";
 import Image from "next/image";
@@ -18,15 +18,16 @@ function MovieTime() {
           Movie Time lets you explore movies and Tv shows
         </p>
         <div className="mx-auto mt-4 max-w-[60%] lg:mx-0  lg:w-full lg:max-w-[80%]">
-          {/* <Button
-          label="Case Study"
-          type="button"
-          intent={"primary"}
-          width={"full"}
-          size={"large"}
-          handleClick={() => push("/projects/morasilat")}
-        /> */}
-          <div className="mt-4 flex space-x-4">
+          <Button
+            label="Case Study"
+            type="button"
+            intent={"primary"}
+            width={"full"}
+            size={"large"}
+            handleClick={() => push("/projects/movie-time")}
+            Icon={FaChevronRight}
+          />
+          {/* <div className="mt-4 flex space-x-4">
             <Button
               label="Live Demo"
               type="button"
@@ -47,7 +48,7 @@ function MovieTime() {
               }
               Icon={RiGithubLine}
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="col-span-4 ml-2">

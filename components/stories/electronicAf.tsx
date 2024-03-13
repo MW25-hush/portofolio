@@ -2,7 +2,7 @@
 
 import React from "react";
 import { Button } from "../molecules/button";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import { FaChevronRight, FaExternalLinkAlt } from "react-icons/fa";
 import { useRouter } from "next/navigation";
 import { RiGithubLine } from "react-icons/ri";
 import Image from "next/image";
@@ -18,15 +18,16 @@ function ElectronicAf() {
           Online store for electronic suppliances in Afghanistan
         </p>
         <div className="mx-auto mt-4 max-w-[60%] lg:mx-0  lg:w-full lg:max-w-[80%]">
-          {/* <Button
+          <Button
             label="Case Study"
             type="button"
             intent={"primary"}
             width={"full"}
             size={"large"}
-            handleClick={() => push("/projects/morasilat")}
-          /> */}
-          <div className="mt-4 flex space-x-4">
+            handleClick={() => push("/projects/electronic")}
+            Icon={FaChevronRight}
+          />
+          {/* <div className="mt-4 flex space-x-4">
             <Button
               label="Live Demo"
               type="button"
@@ -45,7 +46,7 @@ function ElectronicAf() {
               }
               Icon={RiGithubLine}
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="col-span-4 ml-2">

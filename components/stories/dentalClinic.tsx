@@ -4,8 +4,7 @@ import { Button } from "../molecules/button";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import clinicCover from "../../public/images/clinic/clinicCover.png";
-import { FaExternalLinkAlt, FaLock } from "react-icons/fa";
-import { RiGithubLine } from "react-icons/ri";
+import { FaChevronRight, FaLock } from "react-icons/fa";
 
 function Clinic() {
   const { push } = useRouter();
@@ -22,7 +21,18 @@ function Clinic() {
         <p className="mx-auto max-w-[60%] md:max-w-[40%] lg:mx-0 lg:max-w-[80%]">
           An application for a Dental Clinic using Next Js and Firebase
         </p>
-        <div className="mt-4 flex space-x-4">
+        <div className="mx-auto mt-4 max-w-[60%] lg:mx-0  lg:w-full lg:max-w-[80%]">
+          <Button
+            label="Case Study"
+            type="button"
+            intent={"primary"}
+            width={"full"}
+            size={"large"}
+            handleClick={() => push("/projects/clinic")}
+            Icon={FaChevronRight}
+          />
+        </div>
+        {/* <div className="mt-4 flex space-x-4">
           <Button
             label="Live Demo"
             type="button"
@@ -43,7 +53,7 @@ function Clinic() {
             }
             Icon={RiGithubLine}
           />
-        </div>
+        </div> */}
       </div>
       <div className="col-span-4 ml-2">
         <Image src={clinicCover} alt="" />

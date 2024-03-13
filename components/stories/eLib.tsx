@@ -4,7 +4,7 @@ import { Button } from "../molecules/button";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 import eLib from "../../public/images/eLib/eLibCover.png";
-import { FaExternalLinkAlt, FaLock } from "react-icons/fa";
+import { FaChevronRight, FaExternalLinkAlt, FaLock } from "react-icons/fa";
 
 function ELib() {
   const { push } = useRouter();
@@ -26,6 +26,7 @@ function ELib() {
             width={"full"}
             size={"large"}
             handleClick={() => push("/projects/eLib")}
+            Icon={FaChevronRight}
           />
         </div>
       </div>

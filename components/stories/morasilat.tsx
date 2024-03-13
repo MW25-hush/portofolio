@@ -4,7 +4,7 @@ import Image from "next/image";
 import morasilatCover from "../../public/images/morasilat/morasilatCover.png";
 import { Button } from "../molecules/button";
 import { useRouter } from "next/navigation";
-import { FaExternalLinkAlt, FaLock } from "react-icons/fa";
+import { FaChevronRight, FaExternalLinkAlt, FaLock } from "react-icons/fa";
 import { RiGithubLine } from "react-icons/ri";
 
 function Morasilat() {
@@ -26,8 +26,9 @@ function Morasilat() {
             width={"full"}
             size={"large"}
             handleClick={() => push("/projects/morasilat")}
+            Icon={FaChevronRight}
           />
-          <div className="mt-4 flex space-x-4">
+          {/* <div className="mt-4 flex space-x-4">
             <Button
               label="Live Demo"
               type="button"
@@ -45,7 +46,7 @@ function Morasilat() {
               }
               Icon={RiGithubLine}
             />
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="col-span-4 ml-2">
