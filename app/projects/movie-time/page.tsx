@@ -1,21 +1,49 @@
+"use client";
+import { Button } from "@/components/molecules/button";
 import Image from "next/image";
+import { useRouter } from "next/navigation";
+import { FaExternalLinkAlt } from "react-icons/fa";
+import { RiGithubLine } from "react-icons/ri";
 
 function Page() {
+  const { push } = useRouter();
+
   return (
     <div className="col-start-2 col-end-12">
-      <section className="h-[85vh]">
-        <div className="flex h-3/4 items-center justify-center space-x-10">
-          <Image
-            src="/images/movieDB/logo.png"
-            alt="logo"
-            width={400}
-            height={400}
-          />
-          <div>
-            <h3 className="text-[2.5rem] font-bold">Movie Time DB</h3>
-            <p className="w-[46ch] text-[1.25rem] text-gray-400">
-              Explore the world of Tv shows and Movies
-            </p>
+      <section className="h-[85vh] ">
+        <div className="flex h-3/4 flex-col items-center justify-center">
+          <div className="flex items-center justify-center space-x-10 ">
+            <Image
+              src="/images/movieDB/logo.png"
+              alt="logo"
+              width={400}
+              height={400}
+            />
+
+            <div>
+              <h3 className="text-[2.5rem] font-bold">Movie Time DB</h3>
+              <p className="w-[46ch] text-[1.25rem] text-gray-400">
+                Explore the world of Tv shows and Movies
+              </p>
+            </div>
+          </div>
+          <div className="flex items-center justify-center">
+            <Button
+              label="Live Demo"
+              type="button"
+              intent={"tertiary"}
+              Icon={FaExternalLinkAlt}
+              handleClick={() => push("https://movie-databse.vercel.app/")}
+            />
+            <Button
+              label="Source Code"
+              type="button"
+              intent={"tertiary"}
+              handleClick={() =>
+                push("https://github.com/Mehdi-UX-Dev/Movie-Databse")
+              }
+              Icon={RiGithubLine}
+            />
           </div>
         </div>
         <div className="flex items-center justify-center space-x-2">
