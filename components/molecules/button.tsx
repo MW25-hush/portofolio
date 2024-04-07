@@ -1,13 +1,12 @@
 import { cva, cx, VariantProps } from "class-variance-authority";
 import { IconType } from "react-icons";
 
-const buttonCVA = cva(["rounded", "font-bold", "capitalize"], {
+const buttonCVA = cva(["rounded-full", "font-bold", "capitalize"], {
   variants: {
     intent: {
       primary: [
         "bg-primary",
         "text-white",
-        "rounded-[0.5rem]",
         "hover:bg-secondary",
         "hover:text-primary",
       ],
@@ -39,7 +38,6 @@ const buttonCVA = cva(["rounded", "font-bold", "capitalize"], {
 });
 
 interface ButtonProps extends VariantProps<typeof buttonCVA> {
-  overrideStyles?: string;
   /**
    * Button contents
    */
@@ -72,7 +70,6 @@ export const Button = ({
   size,
   label,
   width,
-  overrideStyles,
   handleClick,
   Icon,
   ...props
@@ -82,7 +79,6 @@ export const Button = ({
       type={type}
       className={cx(buttonCVA({ intent, size, width }), {
         "bg-gray-400": loading,
-        [overrideStyles || ""]: overrideStyles !== undefined,
       })}
       {...props}
       onClick={handleClick}

@@ -4,10 +4,13 @@ import { cx } from "class-variance-authority";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import { Button } from "../molecules/button";
+import { RiMenu3Line } from "react-icons/ri";
+import { useState } from "react";
+import MobileNav from "./mobileNavbar";
 
 export default function Navbar() {
   const pathname = usePathname();
-
+  const [mobileNav, toggleMobileNav] = useState(false);
   const Download = async () => {
     try {
       const response = await fetch("/api/file");
@@ -38,14 +41,25 @@ export default function Navbar() {
       console.error("Error downloading file:", error);
     }
   };
-  return (
-    <div className="col-span-4  mx-4 mt-8 flex items-center justify-between font-bebas_neve lg:col-start-2  lg:col-end-12 lg:mx-0 ">
+  return mobileNav ? (
+    <MobileNav
+      pathname={pathname}
+      download={Download}
+      shutNav={toggleMobileNav}
+    />
+  ) : (
+    <nav className=" mx-4 mt-8 flex items-center justify-between font-bebas_neve md:mx-16 ">
       <div className="  text-[2.5rem] tracking-[0.05em] ">M@W</div>
-      <div className="flex items-center space-x-8 font-helvetica text-lg capitalize ">
+      <RiMenu3Line
+        size={48}
+        onClick={() => toggleMobileNav(true)}
+        className="md:hidden"
+      />
+
+      <div className="hidden items-center space-x-8 font-helvetica text-lg capitalize md:flex ">
         <Button
           label="Resume"
           intent={"secondary"}
-          overrideStyles="rounded-full !px-4"
           handleClick={() => Download()}
         />
         <Link
@@ -65,6 +79,6 @@ export default function Navbar() {
           about
         </Link>
       </div>
-    </div>
+    </nav>
   );
 }

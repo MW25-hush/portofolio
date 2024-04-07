@@ -1,0 +1,10 @@
+Hi, I'm Mohammad Mehdi Wahid. I sketch ideas, craft solutions, and bring them to life with code magic!
+“I’m Mohammad Mehdi Wahid, a passionate designer and developer.I specialize in sketching creative ideas and crafting elegant solutions.
+I’m deeply passionate about creating user-friendly interfaces that blend aesthetics with functionality.
+
+Hi, I'm Mohammad Mehdi Wahid.I specialize in sketching creative ideas and crafting elegant solutions. and bring them to life with code magic!
+
+
+Certainly! Here's a revised version focusing on your mastery of React and Next.js:
+
+"Hi, I'm Mohammad Mehdi Wahid. I specialize in sketching creative ideas and crafting elegant solutions, bringing them to life through mastery in React and Next.js."

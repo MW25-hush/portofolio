@@ -14,7 +14,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="grid grid-cols-4 lg:grid-cols-12">
+      <body>
         <Navbar />
         {children}
       </body>
