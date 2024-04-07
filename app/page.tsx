@@ -31,7 +31,7 @@ export default function Home() {
           <div className="order-2 lg:order-none">
             <h1 className="  text-center text-[2.5rem] font-bold leading-[1.25] md:text-[3rem] lg:text-left ">
               Front-End React Developer{" "}
-              <span className="block lg:inline ">UI/UX Designer</span>
+              <span className="block ">UI/UX Designer</span>
             </h1>
 
             <p className="px-4 pt-5 text-center text-gray-600 md:pt-5 md:text-[1.25rem] lg:px-0 lg:text-left">
@@ -71,12 +71,12 @@ export default function Home() {
         </div>
       </div>
       {/* projects section  */}
-      <div className="   ">
+      <div className="mx-auto mt-40 max-w-6xl">
         <Morasilat />
-        {/* <ELib />
-        <Clinic />
-        <ElectronicAf />
-        <MovieTime /> */}
+        {/* <ELib /> */}
+        {/* <Clinic /> */}
+        {/* <ElectronicAf /> */}
+        {/* <MovieTime />  */}
       </div>
     </div>
   );
