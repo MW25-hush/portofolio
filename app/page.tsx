@@ -71,7 +71,7 @@ export default function Home() {
         </div>
       </div>
       {/* projects section  */}
-      <div className="mx-auto mt-40 max-w-6xl space-y-28">
+      <div className="mx-4 mb-20 mt-40 max-w-6xl space-y-28 xl:mx-auto">
         <Morasilat />
         <ELib />
         <Clinic />

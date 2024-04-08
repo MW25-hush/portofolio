@@ -7,17 +7,17 @@ import Link from "next/link";
 
 function ELib() {
   return (
-    <div className="mb-4 grid grid-cols-6 items-center  shadow-lg  ">
-      <div className="col-span-4 ">
+    <div className=" mb-4 flex grid-cols-6 flex-col items-center lg:grid ">
+      <div className="col-span-4  ">
         <Image src={eLib} alt="" className="  object-cover" />
       </div>
-      <div className="col-span-2 flex h-full flex-col  justify-center bg-[#79CDF6] px-4">
+      <div className="col-span-2 flex h-full w-full flex-col  justify-center bg-[#79CDF6] px-4">
         <h1 className=" text-[2.5rem] font-bold text-gray-950">E-Library</h1>
-        <p className="pt-2 text-gray-950">
+        <p className=" w-[55ch] pt-2 text-gray-950 lg:w-full">
           The design of a mobile application for computer science faculty
           library.
         </p>
-        <div className="group flex w-fit items-center space-x-2 pt-8">
+        <div className="group flex w-fit items-center space-x-2 pb-2 pt-8 lg:pb-0">
           <Link
             className="text-[1.5rem] font-semibold text-gray-950 group-hover:text-gray-200 "
             href={"/projects/eLib"}
