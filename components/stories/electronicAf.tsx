@@ -1,56 +1,31 @@
 "use client";
 
 import React from "react";
-import { Button } from "../molecules/button";
-import { FaChevronRight, FaExternalLinkAlt } from "react-icons/fa";
-import { useRouter } from "next/navigation";
-import { RiGithubLine } from "react-icons/ri";
+import { FaChevronRight } from "react-icons/fa";
 import Image from "next/image";
-import electronicAF from "@/public/images/electronic/HomePage.png";
+import electronicAF from "@/public/images/electronic/electronicCover.png";
+import Link from "next/link";
 
 function ElectronicAf() {
-  const { push } = useRouter();
   return (
-    <div className="mb-4 grid grid-cols-4 rounded-2xl bg-accent-lightGray py-2 shadow-lg  lg:grid-cols-6 lg:px-4 lg:py-8">
-      <div className=" col-span-4 mb-4 text-center lg:col-span-2 lg:mb-0 lg:self-center lg:text-left">
-        <h1 className="text-[2rem] font-bold">Electronic.AF</h1>
-        <p className="mx-auto max-w-[60%] md:max-w-[40%] lg:mx-0 lg:max-w-[80%]">
-          Online store for electronic suppliances in Afghanistan
-        </p>
-        <div className="mx-auto mt-4 max-w-[60%] lg:mx-0  lg:w-full lg:max-w-[80%]">
-          <Button
-            label="Case Study"
-            type="button"
-            intent={"primary"}
-            width={"full"}
-            size={"large"}
-            handleClick={() => push("/projects/electronic")}
-            Icon={FaChevronRight}
-          />
-          {/* <div className="mt-4 flex space-x-4">
-            <Button
-              label="Live Demo"
-              type="button"
-              intent={"secondary"}
-              width={"full"}
-              Icon={FaExternalLinkAlt}
-              handleClick={() => push("https://electronic-af.vercel.app")}
-            />
-            <Button
-              label="Source Code"
-              type="button"
-              intent={"tertiary"}
-              width={"full"}
-              handleClick={() =>
-                push("https://github.com/Mehdi-UX-Dev/Electronic.AF")
-              }
-              Icon={RiGithubLine}
-            />
-          </div> */}
-        </div>
+    <div className="mb-4 grid grid-cols-6 items-center  shadow-lg  ">
+      <div className="col-span-4 ">
+        <Image src={electronicAF} alt="" className=" h-[500px] object-cover" />
       </div>
-      <div className="col-span-4 ml-2">
-        <Image src={electronicAF} alt="" />
+      <div className="col-span-2 flex h-full flex-col  justify-center bg-[#899FDC] px-4">
+        <h1 className="text-[2.5rem] font-bold text-gray-950">Electronic.AF</h1>
+        <p className="pt-2 text-gray-950">
+          Online store for electronic suppliances in Afghanistan.
+        </p>
+        <div className="group flex w-fit items-center space-x-2 pt-8">
+          <Link
+            className="text-[1.5rem] font-semibold text-gray-950 group-hover:text-gray-200 "
+            href={"/projects/electronic"}
+          >
+            Case Study
+          </Link>
+          <FaChevronRight className="text-gray-950 group-hover:text-gray-200" />
+        </div>
       </div>
     </div>
   );

@@ -71,12 +71,12 @@ export default function Home() {
         </div>
       </div>
       {/* projects section  */}
-      <div className="mx-auto mt-40 max-w-6xl">
+      <div className="mx-auto mt-40 max-w-6xl space-y-28">
         <Morasilat />
-        {/* <ELib /> */}
-        {/* <Clinic /> */}
-        {/* <ElectronicAf /> */}
-        {/* <MovieTime />  */}
+        <ELib />
+        <Clinic />
+        <ElectronicAf />
+        <MovieTime />
       </div>
     </div>
   );
