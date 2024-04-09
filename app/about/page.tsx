@@ -1,38 +1,10 @@
 "use client";
 import Image from "next/image";
 
-import { BiChevronLeft, BiChevronRight } from "react-icons/bi";
 import { useState } from "react";
 import Link from "next/link";
 
-const carouselArray: { src: string; href: string }[] = [
-  {
-    src: "1.jpg",
-    href: "https://www.coursera.org/account/accomplishments/verify/26GQUBDNMFY2",
-  },
-  { src: "2.jpg", href: "https://coursera.org/verify/RHQNBPJX2SU4" },
-
-  { src: "3.jpg", href: "https://coursera.org/verify/X4CS7QAYQVMP" },
-  { src: "4.jpg", href: "https://coursera.org/verify/DKDDQN8RDNPJ" },
-  { src: "5.jpg", href: "https://coursera.org/verify/9H5FJJMFWJYH" },
-  { src: "6.jpg", href: "https://coursera.org/verify/2KTMTDZ2E82J" },
-  { src: "7.jpg", href: "https://coursera.org/verify/SL6TQNHVCBQJ" },
-  {
-    src: "Udemy.jpg",
-    href: "https://www.udemy.com/certificate/UC-4f10b11f-b6a3-40ee-95b0-7cf6ad93b7b1/",
-  },
-  { src: "badgeCertificate.jpg", href: "https://www.credly.com/go/hq46IVro" },
-];
-
 function About() {
-  const [carousel, setCarousel] = useState<{
-    state: "rightAnimation" | "leftAnimation";
-    number: number;
-  }>({
-    state: "leftAnimation",
-    number: 0,
-  });
-
   return (
     <div>
       <div className="mx-4 max-w-7xl md:mx-16 2xl:mx-auto ">
