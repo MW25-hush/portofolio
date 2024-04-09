@@ -58,11 +58,6 @@ export default function Navbar() {
         />
 
         <div className="hidden items-center space-x-8 font-helvetica text-lg capitalize md:flex ">
-          <Button
-            label="Resume"
-            intent={"secondary"}
-            handleClick={() => Download()}
-          />
           <Link
             href={"/"}
             className={cx("text-accent-gray hover:text-primary", {
@@ -79,6 +74,11 @@ export default function Navbar() {
           >
             about
           </Link>
+          <Button
+            label="CV"
+            intent={"tertiary"}
+            handleClick={() => Download()}
+          />
         </div>
       </div>
     </nav>
