@@ -48,36 +48,38 @@ export default function Navbar() {
       shutNav={toggleMobileNav}
     />
   ) : (
-    <nav className=" mx-4 mt-8 flex items-center justify-between font-bebas_neve md:mx-16 ">
-      <div className="  text-[2.5rem] tracking-[0.05em] ">M@W</div>
-      <RiMenu3Line
-        size={48}
-        onClick={() => toggleMobileNav(true)}
-        className="md:hidden"
-      />
-
-      <div className="hidden items-center space-x-8 font-helvetica text-lg capitalize md:flex ">
-        <Button
-          label="Resume"
-          intent={"secondary"}
-          handleClick={() => Download()}
+    <nav className="fixed  z-10 w-full bg-white shadow md:px-16">
+      <div className="mx-auto flex  max-w-7xl items-center   justify-between  py-4  font-bebas_neve ">
+        <div className="  text-[2.5rem] tracking-[0.05em] ">M@W</div>
+        <RiMenu3Line
+          size={48}
+          onClick={() => toggleMobileNav(true)}
+          className="md:hidden"
         />
-        <Link
-          href={"/"}
-          className={cx("text-accent-gray hover:text-primary", {
-            "font-bold text-primary": pathname === "/",
-          })}
-        >
-          projects
-        </Link>
-        <Link
-          href={"/about"}
-          className={cx("text-accent-gray hover:text-primary", {
-            "font-bold text-primary": pathname === "/about",
-          })}
-        >
-          about
-        </Link>
+
+        <div className="hidden items-center space-x-8 font-helvetica text-lg capitalize md:flex ">
+          <Button
+            label="Resume"
+            intent={"secondary"}
+            handleClick={() => Download()}
+          />
+          <Link
+            href={"/"}
+            className={cx("text-accent-gray hover:text-primary", {
+              "font-bold text-primary": pathname === "/",
+            })}
+          >
+            projects
+          </Link>
+          <Link
+            href={"/about"}
+            className={cx("text-accent-gray hover:text-primary", {
+              "font-bold text-primary": pathname === "/about",
+            })}
+          >
+            about
+          </Link>
+        </div>
       </div>
     </nav>
   );

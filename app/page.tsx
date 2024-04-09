@@ -25,7 +25,7 @@ const icons = [
 
 export default function Home() {
   return (
-    <div className="pt-20">
+    <div className="pt-40">
       <div className="mx-auto max-w-6xl">
         <div className=" animationMy  flex flex-col items-center gap-4 lg:flex-row   ">
           <div className="order-2 lg:order-none">
