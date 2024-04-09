@@ -1,141 +1,87 @@
 "use client";
 
-import { Button } from "@/components/molecules/button";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import Link from "next/link";
+import { FaFigma } from "react-icons/fa6";
+import { FiYoutube } from "react-icons/fi";
 import { RiGithubLine } from "react-icons/ri";
 
 function Morasilat() {
-  const { push } = useRouter();
   return (
-    <div className="animationMy col-start-2 col-end-12 ">
-      <section className=" h-[85vh]">
-        <div className="flex h-3/4 flex-col items-center justify-center ">
-          <div className="flex items-center space-x-10">
-            <Image
-              src="/images/Morasilat.png"
-              alt="Morasilat"
-              width={200}
-              height={200}
-            />
-            <div>
-              <h3 className="text-[2.5rem] font-bold">Morasilat</h3>
-              <p className="w-[26ch] text-[1.25rem] text-gray-400">
-                Official document transmission app for Kabul University
-              </p>
-            </div>
-          </div>
-          <div className="">
-            {" "}
-            <Button
-              label="YouTube Demo"
-              type="button"
-              intent={"tertiary"}
-              Icon={FaExternalLinkAlt}
-              handleClick={() => push("https://youtu.be/i0unxiBXC90")}
-            />
-            <Button
-              label="Source Code"
-              type="button"
-              intent={"tertiary"}
-              handleClick={() =>
-                push("https://github.com/Mehdi-UX-Dev/Murasilat_V2.0")
-              }
-              Icon={RiGithubLine}
-            />
-          </div>
-        </div>
-        <div className="flex items-center justify-center space-x-2">
-          <p className="text-gray-500">Mohammad Mehdi Wahid, Bahir Hakimi</p>
-          <div className="h-5 border-r-2 border-black"></div>
-          <p className="font-bold text-cyan-600 ">August 2023 - Dec 2023</p>
-        </div>
-      </section>
-
-      <div>
-        <iframe
-          src="https://www.youtube.com/embed/i0unxiBXC90"
-          className="mx-auto mt-[3rem] h-[600px] w-11/12 border border-black"
-        >
-          Your browser does not support this format
-        </iframe>
+    <div className="animationMy mx-auto max-w-[100rem]  ">
+      <div className="flex justify-center pt-32">
+        <Image
+          src="/images/Morasilat.png"
+          alt="Morasilat"
+          width={200}
+          height={200}
+        />
       </div>
+      <div className="flex justify-center space-x-4 pt-5">
+        <div className="flex   items-center space-x-2">
+          <FiYoutube size="32" />
+          <Link href="https://youtu.be/i0unxiBXC90" className="text-[1.5rem]">
+            Demo
+          </Link>
+        </div>
 
-      <section className=" mx-auto  mt-[5rem] max-w-5xl space-y-[3rem] py-[1rem]">
-        <div className=" flex">
+        <div className="flex items-center space-x-2">
+          <RiGithubLine size="32" />
+          <Link
+            href="https://github.com/Mehdi-UX-Dev/Murasilat_V2.0"
+            className="text-[1.5rem]"
+          >
+            Source Code
+          </Link>
+        </div>
+
+        <div className="flex items-center space-x-2">
+          <FaFigma size="32" />
+          <Link
+            className="text-[1.5rem]"
+            href="https://www.figma.com/proto/8vlqCoQtKdcnrDMHURHHcf/Morasilat?page-id=107%3A321&type=design&node-id=496-748&viewport=180%2C309%2C0.13&t=HminhZjB3XUljiyY-1&scaling=scale-down&starting-point-node-id=779%3A755&show-proto-sidebar=1&mode=design"
+          >
+            Prototype
+          </Link>
+        </div>
+      </div>
+      <div className="flex justify-between pt-10">
+        <div className="space-y-8">
           <div>
-            <h1 className="text-[2rem] font-bold">Introduction</h1>
-            <div className=" w-10 border-b-4 border-black"></div>
-            <p className="w-[55ch] pt-4 leading-[140%]">
+            <h1 className="text-[2rem] font-bold">Morasilat</h1>
+            <p className="w-[45ch] text-[1.5rem] ">
+              Official document transmission application for Kabul University.
+            </p>
+          </div>
+
+          <div className="">
+            <h1 className="text-[2rem] font-bold">Overview</h1>
+            <p className="w-[45ch] text-[1.5rem]">
               Morasilat is a web application designed and developed for Kabul
               University. It is used for transmission of documents within the
               organization. It is a big step in digitalizing the most
               fundamental governmental procedure in Afghanistan.
             </p>
           </div>
-
+        </div>
+        <div className="flex flex-col space-y-8">
           <div>
-            <h1 className=" text-[2rem] font-bold">My Role</h1>
-            <div className=" w-10 border-b-4 border-black"></div>
-
-            <p className=" w-[55ch] pt-4 leading-[140%]">
-              Throughout this project I had the responsibility of conducting
-              research, making prototypes and mockups and developing the
-              front-end of the application.
-            </p>
+            <h1 className="text-[2rem] font-bold">My Role</h1>
+            <p className="text-[1.5rem]">UX/UI Designer, Front-end developer</p>
           </div>
-        </div>
-
-        <div className="flex">
           <div>
-            <h1 className=" text-[2rem] font-bold">Problem Statement</h1>
-            <div className=" w-10 border-b-4 border-black"></div>
-
-            <p className="w-[55ch] pt-4 leading-[140%]">
-              Afghanistan is a third world country, thus in the technological
-              aspect the country has not advanced yet unfortunately. The
-              Morasilat application intends to facilitate and digitalize the
-              transmission of official documents from one organization to
-              another. The main problem with the traditional paper-based system
-              is the amount of time and resources that is taken. Considering
-              contemporary digital speed and optimization, the traditional
-              paper-based system is way aback of time, so with the Morasilat
-              Project we intend to completely overturn the traditional and
-              outdated method.
-            </p>
+            <h1 className=" text-[2rem] font-bold">Duration</h1>
+            <p className="text-[1.5rem]">6 months</p>
           </div>
-
-          <div className="">
-            <h1 className="text-[2rem] font-bold">Solution</h1>
-            <div className=" w-10 border-b-4 border-black"></div>
-
-            <p className="w-[55ch] pt-4 leading-[140%]">
-              I worked on the project over a span of 6 months. I did research
-              and interviews with people of high authority and experts in the
-              governmental procedures. I did usability testing several times to
-              make the experience for a user as smooth as possible. Right now
-              Morasilat is helping hundreds of people by easing the process of
-              writing and sending documents.
+          <div>
+            <h1 className="text-[2rem] font-bold">Tools & Technologies</h1>
+            <p className="w-[45ch] text-[1.5rem]">
+              Paper and Pencil, Figma, Adobe Illustrator, NextJs, Redux,
+              TailwindCSS
             </p>
           </div>
         </div>
-
-        <div className="">
-          <h1 className=" text-[2rem] font-bold">User Research</h1>
-          <div className=" w-10 border-b-4 border-black"></div>
-
-          <p className="w-[55ch] pt-4 leading-[140%]">
-            I used interview as a primary method for my research. I interviewed
-            experts on the field of document transmitting and what I did get
-            from there was a big frustration for me due to the fact there was no
-            centralized and standard procedure. Every respective organization
-            had changed the procedure a little bit to their own comfort, so
-            after some time we managed to make a consensus in the way the
-            documents are processed and transmitted.
-          </p>
-        </div>
-      </section>
+      </div>
 
       <section className="mx-auto mt-[5rem] max-w-5xl">
         <h1 className="text-[2rem] font-bold">Persona</h1>

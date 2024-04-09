@@ -6,7 +6,7 @@ import { CiLinkedin } from "react-icons/ci";
 function Footer() {
   return (
     <div className=" mt-20  border-t-2 py-10  ">
-      <div className="flex max-w-7xl flex-col items-center space-y-8 md:flex-row  md:justify-between md:space-y-0 md:px-8 lg:mx-auto  ">
+      <div className="flex max-w-[100rem] flex-col items-center space-y-8 md:flex-row  md:justify-between md:space-y-0 md:px-8 lg:mx-auto  ">
         <div className="flex items-center space-x-2">
           <FaRegCopyright size={32} />
           <p className="text-[1.5rem] text-gray-400">2024</p>

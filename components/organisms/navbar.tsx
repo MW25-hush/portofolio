@@ -49,7 +49,7 @@ export default function Navbar() {
     />
   ) : (
     <nav className="fixed  z-10 w-full bg-white shadow md:px-16">
-      <div className="mx-auto flex  max-w-7xl items-center   justify-between  py-4  font-bebas_neve ">
+      <div className="mx-auto flex  max-w-[100rem]  items-center   justify-between  py-4  font-bebas_neve ">
         <div className="  text-[2.5rem] tracking-[0.05em] ">M@W</div>
         <RiMenu3Line
           size={48}
