@@ -202,9 +202,22 @@ function Morasilat() {
           to make the make the application{" "}
           <span className="font-bold">USEFUL.</span>
         </p>
-
         <Image
-          src="/images/morasilat/designProblem.png"
+          src="/images/morasilat/issue 1.png"
+          alt="solution"
+          height={1000}
+          width={1000}
+          className="mt-2 rounded-lg border"
+        />{" "}
+        <Image
+          src="/images/morasilat/issue 2.png"
+          alt="solution"
+          height={1000}
+          width={1000}
+          className="mt-2 rounded-lg border"
+        />{" "}
+        <Image
+          src="/images/morasilat/enhance 1.png"
           alt="solution"
           height={1000}
           width={1000}
