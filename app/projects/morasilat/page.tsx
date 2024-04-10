@@ -83,6 +83,37 @@ function Morasilat() {
         </div>
       </div>
 
+      <section className="">
+        <h1 className="text-[2rem] font-bold">Design Process</h1>
+        <div className="flex justify-center">
+          <Image
+            src="/images/morasilat/design process.png"
+            alt=""
+            width={1000}
+            height={1000}
+            className="object-cover"
+          />
+        </div>
+      </section>
+
+      <section>
+        <h1 className="text-[2rem] font-bold">Define</h1>
+        <Image
+          src="/images/morasilat/5w.png"
+          alt=""
+          className="mx-auto"
+          height={1000}
+          width={1000}
+        />
+        <Image
+          src="/images/morasilat/problem statement.png"
+          alt=""
+          className="mx-auto mt-4 rounded-[2rem]"
+          height={1000}
+          width={1000}
+        />
+      </section>
+
       <section className="mx-auto mt-[5rem] max-w-5xl">
         <h1 className="text-[2rem] font-bold">Persona</h1>
         <div>
