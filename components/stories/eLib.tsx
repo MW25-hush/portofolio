@@ -13,7 +13,7 @@ function ELib() {
       </div>
       <div className="col-span-2 flex h-full w-full flex-col  justify-center bg-[#79CDF6] px-4">
         <h1 className=" text-[2.5rem] font-bold text-gray-950">E-Library</h1>
-        <p className=" w-[55ch] pt-2 text-gray-950 lg:w-full">
+        <p className=" pt-2 text-gray-950 md:w-[55ch] lg:w-full">
           The design of a mobile application for computer science faculty
           library.
         </p>

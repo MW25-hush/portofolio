@@ -12,7 +12,7 @@ function Clinic() {
         <h1 className=" text-[2.5rem] font-bold text-white">
           Dental Clinic DBMS
         </h1>
-        <p className="w-[55ch] pt-2 text-[1.125rem] text-white lg:w-full">
+        <p className="pt-2 text-[1.125rem] text-white md:w-[55ch] lg:w-full">
           A database management system for a dental clinic using Next Js and
           Firebase
         </p>
