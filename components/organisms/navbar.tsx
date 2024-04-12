@@ -74,11 +74,14 @@ export default function Navbar() {
           >
             about
           </Link>
-          <Button
-            label="CV"
-            intent={"tertiary"}
-            handleClick={() => Download()}
-          />
+
+          <Link
+            href={"#"}
+            onClick={() => Download()}
+            className="text-accent-gray"
+          >
+            CV
+          </Link>
         </div>
       </div>
     </nav>

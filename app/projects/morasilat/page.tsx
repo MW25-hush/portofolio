@@ -8,7 +8,7 @@ import { RiGithubLine } from "react-icons/ri";
 
 function Morasilat() {
   return (
-    <div className="animationMy mx-16 max-w-[70rem] xl:mx-auto  ">
+    <div className="animationMy mx-16 lg:max-w-[70rem] 2xl:mx-auto 2xl:max-w-[100rem]  ">
       <div className="flex justify-center pt-32">
         <Image
           src="/images/Morasilat.png"
@@ -45,15 +45,8 @@ function Morasilat() {
           </Link>
         </div>
       </div>
-      <div className="flex items-center justify-between pt-28">
+      <div className="flex  justify-between pt-28">
         <div className="space-y-8">
-          <div>
-            <h1 className="font-serif text-[5rem] font-bold">Morasilat</h1>
-            <p className="w-[45ch] text-[1.5rem] ">
-              Official document transmission application for Kabul University.
-            </p>
-          </div>
-
           <div className="">
             <h1 className="text-[2rem] font-bold">Overview</h1>
             <p className="w-[45ch] text-[1.5rem]">
@@ -83,8 +76,8 @@ function Morasilat() {
         </div>
       </div>
 
-      <section className="pt-28">
-        <h1 className="pb-20 font-serif text-[5rem] font-bold">
+      <section className="pt-[200px]">
+        <h1 className="pb-20 font-serif text-[4rem] font-bold">
           Design Process
         </h1>
         <div className="flex justify-center">
@@ -98,8 +91,8 @@ function Morasilat() {
         </div>
       </section>
 
-      <section className="pt-20">
-        <h1 className="pb-20 font-serif text-[5rem] font-bold">Define</h1>
+      <section className="pt-[200px]">
+        <h1 className="pb-20 font-serif text-[4rem] font-bold">Define</h1>
         <div className="space-y-20 rounded-xl bg-gray-100 py-20">
           <Image
             src="/images/morasilat/5w.png"
@@ -118,9 +111,16 @@ function Morasilat() {
         </div>
       </section>
 
-      <section className="pt-28">
+      <section className="pt-[200px]">
         <h1 className=" pb-20 font-serif text-[5rem] font-bold">Empathize</h1>
         <div className=" space-y-20 bg-gray-100 py-20">
+          <Image
+            src="/images/morasilat/userstories.png"
+            alt="persona"
+            className="mx-auto  rounded-lg border object-cover"
+            width={1000}
+            height={1000}
+          />
           <Image
             src="/images/morasilat/personaOne.png"
             alt="persona"
@@ -145,9 +145,9 @@ function Morasilat() {
         </div>
       </section>
 
-      <section className=" pt-28">
+      <section className="pt-[200px]">
         <h1 className=" pb-20 font-serif text-[5rem] font-bold">Ideate</h1>
-        <div className="bg-gray-100 py-20 ">
+        <div className="space-y-20 bg-gray-100 py-20 ">
           <Image
             src="/images/morasilat/paperWireframe.jpg"
             alt="wireframe"
@@ -165,8 +165,8 @@ function Morasilat() {
         </div>
       </section>
 
-      <section className="pt-28">
-        <h1 className="pb-20 font-serif text-[5rem] font-bold">Style Guide</h1>
+      <section className="pt-[200px]">
+        <h1 className="pb-20 font-serif text-[4rem] font-bold">Style Guide</h1>
         <div className="bg-gray-100 py-20 ">
           <Image
             src="/images/morasilat/styleGuide.png"
@@ -178,29 +178,15 @@ function Morasilat() {
         </div>
       </section>
 
-      <section className="pt-28">
-        <h1 className="mb-[1.5rem] text-[2rem] font-bold ">Mockups</h1>
-        <div className="space-y-4 ">
+      <section className="pt-[200px]">
+        <h1 className="pb-20 font-serif text-[4rem] font-bold">Prototype</h1>
+        <div className="bg-gray-100 py-20 ">
           <Image
-            src="/images/morasilat/dashboard.png"
-            alt="hi-fi mockup"
-            className=" rounded-lg border object-cover p-4"
+            src="/images/morasilat/prototype.png"
+            alt="Design System"
             width={1000}
             height={1000}
-          />
-          <Image
-            src="/images/morasilat/write.png"
-            alt="hi-fi mockup"
-            className=" rounded-lg border object-cover p-4"
-            width={1000}
-            height={1000}
-          />
-          <Image
-            src="/images/morasilat/archive.png"
-            alt="hi-fi mockup"
-            className=" rounded-lg border object-cover p-4"
-            width={1000}
-            height={1000}
+            className="mx-auto rounded-lg border object-cover"
           />
         </div>
       </section>
@@ -236,8 +222,8 @@ function Morasilat() {
           className="mt-2 rounded-lg border"
         />
       </section>
-      <div className="mx-auto mb-[3rem] mt-[5rem] max-w-7xl  ">
-        <h1 className="text-[2rem] font-bold  ">What I&apos;ve learned</h1>
+      <div className=" mb-[3rem] mt-[200px]  ">
+        <h1 className="text-[4rem] font-bold  ">What I&apos;ve learned</h1>
         <p className=" w-[55ch] leading-[140%]">
           Morasilat was my first real world project which right now it is used
           by hundreds of users. I implemented industry level standards such as
