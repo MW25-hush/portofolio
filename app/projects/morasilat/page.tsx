@@ -8,7 +8,7 @@ import { RiGithubLine } from "react-icons/ri";
 
 function Morasilat() {
   return (
-    <div className="animationMy mx-auto max-w-[100rem]  ">
+    <div className="animationMy mx-16 max-w-[70rem] xl:mx-auto  ">
       <div className="flex justify-center pt-32">
         <Image
           src="/images/Morasilat.png"
@@ -150,6 +150,13 @@ function Morasilat() {
         <div className="bg-gray-100 py-20 ">
           <Image
             src="/images/morasilat/paperWireframe.jpg"
+            alt="wireframe"
+            height={1000}
+            width={1000}
+            className="mx-auto rounded-lg border object-cover"
+          />
+          <Image
+            src="/images/morasilat/userflow.png"
             alt="wireframe"
             height={1000}
             width={1000}
