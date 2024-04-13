@@ -89,8 +89,8 @@ function Morasilat() {
         </div>
       </section>
 
-      {/* <section className="pt-[200px]">
-        <h1 className="font-bol  pb-20 text-[5rem]">Define</h1>
+      <section className="pt-[100px] md:pt-[200px]">
+        <h1 className=" pb-10 text-[2.5rem] md:pb-20 md:text-[5rem]">Define</h1>
         <div className="space-y-20 rounded-xl bg-gray-100 py-20">
           <Image
             src="/images/morasilat/5w.png"
@@ -107,10 +107,12 @@ function Morasilat() {
             width={1000}
           />
         </div>
-      </section> */}
+      </section>
 
-      {/* <section className="pt-[200px]">
-        <h1 className=" pb-20  text-[5rem] font-bold">Empathize</h1>
+      <section className="pt-[100px] md:pt-[200px]">
+        <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem] ">
+          Empathize
+        </h1>
         <div className=" space-y-20 bg-gray-100 py-20">
           <Image
             src="/images/morasilat/userstories.png"
@@ -141,10 +143,10 @@ function Morasilat() {
             height={1000}
           />
         </div>
-      </section> */}
+      </section>
 
-      {/* <section className="pt-[200px]">
-        <h1 className=" pb-20  text-[5rem] font-bold">Ideate</h1>
+      <section className="pt-[100px] md:pt-[200px]">
+        <h1 className="pb-10 text-[2.5rem] md:pb-20 md:text-[5rem]">Ideate</h1>
         <div className="space-y-20 bg-gray-100 py-20 ">
           <Image
             src="/images/morasilat/paperWireframe.jpg"
@@ -161,10 +163,12 @@ function Morasilat() {
             className="mx-auto rounded-lg border object-cover"
           />
         </div>
-      </section> */}
+      </section>
 
-      {/* <section className="pt-[200px]">
-        <h1 className="pb-20  text-[5rem] ">Style Guide</h1>
+      <section className="pt-[100px] md:pt-[200px]">
+        <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem] ">
+          Style Guide
+        </h1>
         <div className="bg-gray-100 py-20 ">
           <Image
             src="/images/morasilat/styleGuide.png"
@@ -174,10 +178,12 @@ function Morasilat() {
             className="mx-auto rounded-lg border object-cover"
           />
         </div>
-      </section> */}
+      </section>
 
-      {/* <section className="pt-[200px]">
-        <h1 className="pb-20  text-[5rem] ">Prototype</h1>
+      <section className="pt-[100px] md:pt-[200px]">
+        <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem]">
+          Prototype
+        </h1>
         <div className="bg-gray-100 py-20 ">
           <Image
             src="/images/morasilat/prototype.png"
@@ -187,12 +193,14 @@ function Morasilat() {
             className="mx-auto rounded-lg border object-cover"
           />
         </div>
-      </section> */}
+      </section>
 
-      {/* <section id="research" className="pt-28">
-        <div className="flex items-center justify-between pb-20">
-          <h1 className="text-[5rem] ">Research</h1>
-          <p className="w-[55ch] pt-2 text-[1.5rem]">
+      <section id="research" className="pt-28">
+        <div className="flex flex-col items-center justify-between pb-20">
+          <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem] ">
+            Research
+          </h1>
+          <p className="pt-2 text-[1.5rem] md:w-[55ch]">
             We took on a mission that was to fix and redesign an existing
             application which was incomplete in functionality. The main focus
             was to make the make the application{" "}
@@ -222,10 +230,12 @@ function Morasilat() {
             className="mx-auto rounded-lg border object-cover"
           />
         </div>
-      </section> */}
-      {/* <div className=" mb-[3rem] mt-[200px]  ">
-        <h1 className="text-[5rem] ">Next Steps</h1>
-        <p className=" w-[55ch] leading-[140%]">
+      </section>
+      <div className=" mb-[3rem] mt-[100px] md:mt-[200px]  ">
+        <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem] ">
+          Next Steps
+        </h1>
+        <p className=" leading-[140%] md:w-[55ch]">
           Morasilat was my first real world project which right now it is used
           by hundreds of users. I implemented industry level standards such as
           design thinking process,Atomic Design System,Next Js Enterprise Grade
@@ -233,7 +243,7 @@ function Morasilat() {
           massive project. Currently it is used by the whole Kabul University in
           a testing environment in order to be full implemented.
         </p>
-      </div> */}
+      </div>
     </div>
   );
 }
