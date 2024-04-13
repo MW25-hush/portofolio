@@ -8,7 +8,7 @@ import { RiGithubLine } from "react-icons/ri";
 
 function Morasilat() {
   return (
-    <div className="animationMy mx-16 lg:max-w-[70rem] 2xl:mx-auto 2xl:max-w-[100rem]  ">
+    <div className="animationMy px-4  lg:max-w-[70rem] 2xl:mx-auto 2xl:max-w-[100rem]  ">
       <div className="flex justify-center pt-32">
         <Image
           src="/images/Morasilat.png"
@@ -17,15 +17,15 @@ function Morasilat() {
           height={200}
         />
       </div>
-      <div className="flex justify-center space-x-4 pt-10">
-        <div className="flex   items-center space-x-2">
+      <div className="flex flex-col justify-center gap-4 pt-10 md:flex-row ">
+        <div className="flex   items-center gap-4">
           <FiYoutube size="32" />
           <Link href="https://youtu.be/i0unxiBXC90" className="text-[1.5rem]">
             Demo
           </Link>
         </div>
 
-        <div className="flex items-center space-x-2">
+        <div className="flex  items-center gap-4">
           <RiGithubLine size="32" />
           <Link
             href="https://github.com/Mehdi-UX-Dev/Murasilat_V2.0"
@@ -35,7 +35,7 @@ function Morasilat() {
           </Link>
         </div>
 
-        <div className="flex items-center space-x-2">
+        <div className="flex items-center gap-4">
           <FaFigma size="32" />
           <Link
             className="text-[1.5rem]"
@@ -45,19 +45,17 @@ function Morasilat() {
           </Link>
         </div>
       </div>
-      <div className="flex  justify-between pt-28">
-        <div className="space-y-8">
-          <div className="">
-            <h1 className="text-[2rem] font-bold">Overview</h1>
-            <p className="w-[45ch] text-[1.5rem]">
-              Morasilat is a web application designed and developed application
-              for Kabul University. It is used for transmission of documents
-              within the organization. It is a big step in digitalizing the most
-              fundamental governmental procedure in Afghanistan.
-            </p>
-          </div>
+      <div className="flex  flex-col justify-between gap-12  pt-28 lg:flex-row">
+        <div className="">
+          <h1 className="text-[2rem] font-bold">Overview</h1>
+          <p className="text-[1.5rem] md:w-[45ch]">
+            Morasilat is a web application designed and developed application
+            for Kabul University. It is used for transmission of documents
+            within the organization. It is a big step in digitalizing the most
+            fundamental governmental procedure in Afghanistan.
+          </p>
         </div>
-        <div className="flex flex-col space-y-8">
+        <div className="flex flex-col gap-4">
           <div>
             <h1 className="text-[2rem] font-bold">My Role</h1>
             <p className="text-[1.5rem]">UX/UI Designer, Front-end developer</p>
@@ -68,7 +66,7 @@ function Morasilat() {
           </div>
           <div>
             <h1 className="text-[2rem] font-bold">Tools & Technologies</h1>
-            <p className="w-[45ch] text-[1.5rem]">
+            <p className="text-[1.5rem] md:w-[45ch]">
               Paper and Pencil, Figma, Adobe Illustrator, NextJs, Redux,
               TailwindCSS
             </p>
@@ -76,8 +74,8 @@ function Morasilat() {
         </div>
       </div>
 
-      <section className="pt-[200px]">
-        <h1 className="pb-20 font-serif text-[4rem] font-bold">
+      <section className="pt-[100px] md:pt-[200px]">
+        <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem] ">
           Design Process
         </h1>
         <div className="flex justify-center">
@@ -91,8 +89,8 @@ function Morasilat() {
         </div>
       </section>
 
-      <section className="pt-[200px]">
-        <h1 className="pb-20 font-serif text-[4rem] font-bold">Define</h1>
+      {/* <section className="pt-[200px]">
+        <h1 className="font-bol  pb-20 text-[5rem]">Define</h1>
         <div className="space-y-20 rounded-xl bg-gray-100 py-20">
           <Image
             src="/images/morasilat/5w.png"
@@ -109,10 +107,10 @@ function Morasilat() {
             width={1000}
           />
         </div>
-      </section>
+      </section> */}
 
-      <section className="pt-[200px]">
-        <h1 className=" pb-20 font-serif text-[5rem] font-bold">Empathize</h1>
+      {/* <section className="pt-[200px]">
+        <h1 className=" pb-20  text-[5rem] font-bold">Empathize</h1>
         <div className=" space-y-20 bg-gray-100 py-20">
           <Image
             src="/images/morasilat/userstories.png"
@@ -143,10 +141,10 @@ function Morasilat() {
             height={1000}
           />
         </div>
-      </section>
+      </section> */}
 
-      <section className="pt-[200px]">
-        <h1 className=" pb-20 font-serif text-[5rem] font-bold">Ideate</h1>
+      {/* <section className="pt-[200px]">
+        <h1 className=" pb-20  text-[5rem] font-bold">Ideate</h1>
         <div className="space-y-20 bg-gray-100 py-20 ">
           <Image
             src="/images/morasilat/paperWireframe.jpg"
@@ -163,10 +161,10 @@ function Morasilat() {
             className="mx-auto rounded-lg border object-cover"
           />
         </div>
-      </section>
+      </section> */}
 
-      <section className="pt-[200px]">
-        <h1 className="pb-20 font-serif text-[4rem] font-bold">Style Guide</h1>
+      {/* <section className="pt-[200px]">
+        <h1 className="pb-20  text-[5rem] ">Style Guide</h1>
         <div className="bg-gray-100 py-20 ">
           <Image
             src="/images/morasilat/styleGuide.png"
@@ -176,10 +174,10 @@ function Morasilat() {
             className="mx-auto rounded-lg border object-cover"
           />
         </div>
-      </section>
+      </section> */}
 
-      <section className="pt-[200px]">
-        <h1 className="pb-20 font-serif text-[4rem] font-bold">Prototype</h1>
+      {/* <section className="pt-[200px]">
+        <h1 className="pb-20  text-[5rem] ">Prototype</h1>
         <div className="bg-gray-100 py-20 ">
           <Image
             src="/images/morasilat/prototype.png"
@@ -189,41 +187,44 @@ function Morasilat() {
             className="mx-auto rounded-lg border object-cover"
           />
         </div>
-      </section>
+      </section> */}
 
-      <section id="research" className="pt-28">
-        <h1 className="text-[2rem] font-bold">Research</h1>
-        <div className="w-10 border-b-4 border-black"></div>
-        <p className="w-[55ch] pt-2">
-          We took on a mission that was to fix and redesign an existing
-          application which was incomplete in functionality. The main focus was
-          to make the make the application{" "}
-          <span className="font-bold">USEFUL.</span>
-        </p>
-        <Image
-          src="/images/morasilat/issue 1.png"
-          alt="solution"
-          height={1000}
-          width={1000}
-          className=" rounded-lg border"
-        />{" "}
-        <Image
-          src="/images/morasilat/issue 2.png"
-          alt="solution"
-          height={1000}
-          width={1000}
-          className="mt-2 rounded-lg border"
-        />{" "}
-        <Image
-          src="/images/morasilat/enhance 1.png"
-          alt="solution"
-          height={1000}
-          width={1000}
-          className="mt-2 rounded-lg border"
-        />
-      </section>
-      <div className=" mb-[3rem] mt-[200px]  ">
-        <h1 className="text-[4rem] font-bold  ">What I&apos;ve learned</h1>
+      {/* <section id="research" className="pt-28">
+        <div className="flex items-center justify-between pb-20">
+          <h1 className="text-[5rem] ">Research</h1>
+          <p className="w-[55ch] pt-2 text-[1.5rem]">
+            We took on a mission that was to fix and redesign an existing
+            application which was incomplete in functionality. The main focus
+            was to make the make the application{" "}
+            <span className="font-bold">USEFUL.</span>
+          </p>
+        </div>
+        <div className=" space-y-20 bg-gray-100 py-20">
+          <Image
+            src="/images/morasilat/issue 1.png"
+            alt="solution"
+            height={1000}
+            width={1000}
+            className="mx-auto rounded-lg border object-cover"
+          />{" "}
+          <Image
+            src="/images/morasilat/issue 2.png"
+            alt="solution"
+            height={1000}
+            width={1000}
+            className="mx-auto rounded-lg border object-cover"
+          />{" "}
+          <Image
+            src="/images/morasilat/enhance 1.png"
+            alt="solution"
+            height={1000}
+            width={1000}
+            className="mx-auto rounded-lg border object-cover"
+          />
+        </div>
+      </section> */}
+      {/* <div className=" mb-[3rem] mt-[200px]  ">
+        <h1 className="text-[5rem] ">Next Steps</h1>
         <p className=" w-[55ch] leading-[140%]">
           Morasilat was my first real world project which right now it is used
           by hundreds of users. I implemented industry level standards such as
@@ -232,7 +233,7 @@ function Morasilat() {
           massive project. Currently it is used by the whole Kabul University in
           a testing environment in order to be full implemented.
         </p>
-      </div>
+      </div> */}
     </div>
   );
 }
