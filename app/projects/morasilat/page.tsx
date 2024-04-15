@@ -8,7 +8,7 @@ import { RiGithubLine } from "react-icons/ri";
 
 function Morasilat() {
   return (
-    <div className="animationMy px-4  lg:max-w-[70rem] 2xl:mx-auto 2xl:max-w-[100rem]  ">
+    <div className="animationMy px-4 lg:px-16 2xl:mx-auto 2xl:max-w-[100rem]  ">
       <div className="flex justify-center pt-32">
         <Image
           src="/images/Morasilat.png"
@@ -17,15 +17,15 @@ function Morasilat() {
           height={200}
         />
       </div>
-      <div className="flex flex-col justify-center gap-4 pt-10 md:flex-row ">
-        <div className="flex   items-center gap-4">
+      <div className="flex flex-col items-center justify-center gap-8 pt-10 md:flex-row ">
+        <div className="flex items-center   gap-4 hover:rounded-full hover:bg-red-500 hover:px-4 hover:py-2 hover:text-white">
           <FiYoutube size="32" />
           <Link href="https://youtu.be/i0unxiBXC90" className="text-[1.5rem]">
             Demo
           </Link>
         </div>
 
-        <div className="flex  items-center gap-4">
+        <div className="flex items-center gap-4 hover:rounded-full hover:bg-gray-950   hover:px-4 hover:py-2 hover:text-white ">
           <RiGithubLine size="32" />
           <Link
             href="https://github.com/Mehdi-UX-Dev/Murasilat_V2.0"
@@ -35,7 +35,7 @@ function Morasilat() {
           </Link>
         </div>
 
-        <div className="flex items-center gap-4">
+        <div className="hover: flex items-center gap-4 hover:rounded-full hover:bg-yellow-200 hover:px-4 hover:py-2 ">
           <FaFigma size="32" />
           <Link
             className="text-[1.5rem]"
@@ -48,7 +48,7 @@ function Morasilat() {
       <div className="flex  flex-col justify-between gap-12  pt-28 lg:flex-row">
         <div className="">
           <h1 className="text-[2rem] font-bold">Overview</h1>
-          <p className="text-[1.5rem] md:w-[45ch]">
+          <p className="max-w-prose text-[1.5rem] ">
             Morasilat is a web application designed and developed application
             for Kabul University. It is used for transmission of documents
             within the organization. It is a big step in digitalizing the most
@@ -66,7 +66,7 @@ function Morasilat() {
           </div>
           <div>
             <h1 className="text-[2rem] font-bold">Tools & Technologies</h1>
-            <p className="text-[1.5rem] md:w-[45ch]">
+            <p className="max-w-prose text-[1.5rem] ">
               Paper and Pencil, Figma, Adobe Illustrator, NextJs, Redux,
               TailwindCSS
             </p>
@@ -74,7 +74,7 @@ function Morasilat() {
         </div>
       </div>
 
-      <section className="pt-[100px] md:pt-[200px]">
+      <section className=" pt-[100px]  lg:pt-[200px]">
         <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem] ">
           Design Process
         </h1>
@@ -84,12 +84,12 @@ function Morasilat() {
             alt=""
             width={1000}
             height={1000}
-            className="object-cover"
+            className=" object-cover"
           />
         </div>
       </section>
 
-      <section className="pt-[100px] md:pt-[200px]">
+      <section className="pt-[100px] lg:pt-[200px]">
         <h1 className=" pb-10 text-[2.5rem] md:pb-20 md:text-[5rem]">Define</h1>
         <div className="space-y-20 rounded-xl bg-gray-100 py-20">
           <Image
@@ -109,7 +109,7 @@ function Morasilat() {
         </div>
       </section>
 
-      <section className="pt-[100px] md:pt-[200px]">
+      <section className="pt-[100px] lg:pt-[200px]">
         <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem] ">
           Empathize
         </h1>
@@ -145,7 +145,7 @@ function Morasilat() {
         </div>
       </section>
 
-      <section className="pt-[100px] md:pt-[200px]">
+      <section className="pt-[100px] lg:pt-[200px]">
         <h1 className="pb-10 text-[2.5rem] md:pb-20 md:text-[5rem]">Ideate</h1>
         <div className="space-y-20 bg-gray-100 py-20 ">
           <Image
@@ -165,7 +165,7 @@ function Morasilat() {
         </div>
       </section>
 
-      <section className="pt-[100px] md:pt-[200px]">
+      <section className="pt-[100px] lg:pt-[200px]">
         <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem] ">
           Style Guide
         </h1>
@@ -180,7 +180,7 @@ function Morasilat() {
         </div>
       </section>
 
-      <section className="pt-[100px] md:pt-[200px]">
+      <section className="pt-[100px] lg:pt-[200px]">
         <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem]">
           Prototype
         </h1>
@@ -196,7 +196,7 @@ function Morasilat() {
       </section>
 
       <section id="research" className="pt-28">
-        <div className="flex flex-col items-center justify-between pb-20">
+        <div className="flex flex-col justify-between pb-20 text-center md:text-left xl:flex-row">
           <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem] ">
             Research
           </h1>
@@ -231,11 +231,11 @@ function Morasilat() {
           />
         </div>
       </section>
-      <div className=" mb-[3rem] mt-[100px] md:mt-[200px]  ">
+      <div className=" mb-[3rem] mt-[100px] flex flex-col md:mt-[200px] md:flex-row md:justify-between  ">
         <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem] ">
           Next Steps
         </h1>
-        <p className=" leading-[140%] md:w-[55ch]">
+        <p className=" text-[1.5rem] leading-[140%] md:w-[55ch]">
           Morasilat was my first real world project which right now it is used
           by hundreds of users. I implemented industry level standards such as
           design thinking process,Atomic Design System,Next Js Enterprise Grade
