@@ -216,6 +216,13 @@ function Library() {
             width={1000}
             className="mx-auto rounded-lg border object-cover"
           />{" "}
+          <Image
+            src="/images/eLib/patten-identification.jpg"
+            alt="solution"
+            height={1000}
+            width={1000}
+            className="mx-auto rounded-lg border object-cover"
+          />
         </div>
       </section>
       <div className=" mb-[3rem] mt-[100px] flex flex-col md:mt-[200px] md:flex-row md:justify-between  ">
