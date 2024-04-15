@@ -1,182 +1,236 @@
+"use client";
+
 import Image from "next/image";
+import Link from "next/link";
+import { FaFigma } from "react-icons/fa6";
 
-function page() {
+function Library() {
   return (
-    <div className="col-start-2 col-end-12">
-      <section className=" h-[85vh]">
-        <div className="flex h-3/4 items-center justify-center space-x-10">
-          <Image
-            src="/images/eLib/logo.png"
-            alt="Morasilat"
-            width={200}
-            height={200}
-          />
-          <div>
-            <h3 className="text-[2.5rem] font-bold">
-              E-Lib For Kabul University
-            </h3>
-            <p className="w-[26ch] text-[1.25rem] text-gray-400">
-              Mobile App Version of E-Lib for Kabul University
-            </p>
-          </div>
-        </div>
-        <div className="flex items-center justify-center space-x-2">
-          <p className="text-gray-500">Mohammad Mehdi Wahid</p>
-          <div className="h-5 border-r-2 border-black"></div>
-          <p className="font-bold text-cyan-600 ">May 2023 - August 2023</p>
-        </div>
-      </section>
-
-      <section className="mx-auto mt-[5rem] max-w-5xl  space-y-[3rem] py-[1rem] ">
-        <div className="flex space-x-4">
-          <div>
-            <h1 className="text-[2rem] font-bold  ">Project Overview</h1>
-            <div className=" w-10 border-b-4 border-black"></div>
-
-            <p className="w-[55ch] pt-2 leading-[140%]">
-              E-Library is a electronic library that facilitates searching for
-              course materials, books and projects for C.S faculty students. At
-              the beginning it was only designed for the C.S faculty but through
-              the research, it was optimized to be used through all the Kabul
-              University.
-            </p>
-          </div>
-
-          <div>
-            <h1 className=" text-[2rem] font-bold">My Role</h1>
-            <div className=" w-10 border-b-4 border-black"></div>
-            <p className=" w-[55ch] pt-2 leading-[140%]">
-              Throughout this project I had the responsibility of conducting
-              research, making prototypes a.
-            </p>
-          </div>
-        </div>
-
-        <div className="flex space-x-4">
-          <div>
-            <h1 className=" text-[2rem] font-bold">Problem Statement</h1>
-            <div className=" w-10 border-b-4 border-black"></div>
-
-            <p className=" w-[55ch] pt-2 leading-[140%]">
-              C.S faculty did not have an online platform in which the courses
-              would be shared, books were to shared and made available to the
-              students and projects of previous students were observable.
-            </p>
-          </div>
-
-          <div>
-            <h1 className=" text-[2rem] font-bold">Solution</h1>
-            <div className=" w-10 border-b-4 border-black"></div>
-
-            <p className=" w-[55ch] pt-2 leading-[140%]">
-              I worked on a span of 2 months over this project. I did UX
-              research of type: survey for students, focus group with the
-              professor and dean of the faculty. Thus I designed a mobile
-              application to make the recourses even more reachable. Today
-              smartphones has taken more space in the industry so it is
-              important to be able to access the materials on the mobile too.
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <h1 className=" text-[2rem] font-bold">User Research</h1>
-          <div className=" w-10 border-b-4 border-black"></div>
-
-          <p className=" w-[55ch]  pt-2 leading-[140%]">
-            I used interview and focus group as the primary methods for my
-            research. I used interviews for students and focus group and
-            usability testing with the professors of the faculty. I nearly
-            interviewed 20 students, did1 focus group session and several
-            usability testing with the professors. I learned about the pain
-            points the users are facing and acted towards them to make the
-            application more usable and efficient.
+    <div className="animationMy px-4 lg:px-16 2xl:mx-auto 2xl:max-w-[100rem]  ">
+      <div className="flex  items-center justify-center gap-8  pt-32">
+        <Image
+          src="/images/eLib/logo.png"
+          alt="Morasilat"
+          width={200}
+          height={200}
+        />
+        <div className="">
+          <h1 className="text-[2.5rem] font-bold">E-Lib</h1>
+          <p className="w-[26ch] text-[1.25rem] text-gray-600">
+            Mobile App Version of E-Lib for Kabul University
           </p>
         </div>
-      </section>
-
-      <div className="mx-auto mt-[5rem] max-w-5xl space-y-2">
-        <h1 className="text-[2rem] font-bold    ">Persona</h1>
-
-        <Image
-          src="/images/eLib/Professor Persona.jpg"
-          alt="persona"
-          className=" rounded-lg border  object-cover  "
-          width={1000}
-          height={1000}
-        />
-        <Image
-          src="/images/eLib/Students Persona.jpg"
-          alt="persona"
-          className="  rounded-lg border object-cover"
-          width={1000}
-          height={1000}
-        />
+      </div>
+      <div className="flex flex-col items-center justify-center gap-8 pt-10 md:flex-row ">
+        <div className="hover: flex items-center gap-4 hover:rounded-full hover:bg-yellow-200 hover:px-4 hover:py-2 ">
+          <FaFigma size="32" />
+          <Link
+            className="text-[1.5rem]"
+            href="https://www.figma.com/proto/KAD0MPFAyeLyCcs1tOY02i/Faculty-Library-Mobile-App?page-id=47%3A107&type=design&node-id=52-189&viewport=201%2C203%2C0.08&t=p0WhrA3F5yeCWiuO-1&scaling=scale-down&starting-point-node-id=52%3A189&mode=design"
+          >
+            Prototype
+          </Link>
+        </div>
+      </div>
+      <div className="flex  flex-col justify-between gap-12  pt-28 lg:flex-row">
+        <div className="">
+          <h1 className="text-[2rem] font-bold">Overview</h1>
+          <p className="max-w-prose text-[1.5rem] ">
+            E-Library is a electronic library that facilitates searching for
+            course materials, books and projects for C.S faculty students. At
+            the beginning it was only designed for the C.S faculty but through
+            the research, it was optimized to be used through all the Kabul
+            University
+          </p>
+        </div>
+        <div className="flex flex-col gap-4">
+          <div>
+            <h1 className="text-[2rem] font-bold">My Role</h1>
+            <p className="text-[1.5rem]">UX/UI Designer, UX Researcher</p>
+          </div>
+          <div>
+            <h1 className=" text-[2rem] font-bold">Duration</h1>
+            <p className="text-[1.5rem]">3 months</p>
+          </div>
+          <div>
+            <h1 className="text-[2rem] font-bold">Tools & Technologies</h1>
+            <p className="max-w-prose text-[1.5rem] ">
+              Paper and Pencil, Figma, Adobe Illustrator
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div className="mx-auto mt-[5rem] max-w-5xl">
-        <h1 className=" text-[2rem] font-bold">Digital Wireframes</h1>
-        <div className="mt-[1.5rem] flex space-x-4 ">
+      <section className=" pt-[100px]  lg:pt-[200px]">
+        <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem] ">
+          Design Process
+        </h1>
+        <div className="flex justify-center">
+          <Image
+            src="/images/morasilat/design process.png"
+            alt=""
+            width={1000}
+            height={1000}
+            className="object-cover"
+          />
+        </div>
+      </section>
+
+      <section className="pt-[100px] lg:pt-[200px]">
+        <h1 className=" pb-10 text-[2.5rem] md:pb-20 md:text-[5rem]">Define</h1>
+        <div className="space-y-20 rounded-xl bg-gray-100 py-20">
+          <Image
+            src="/images/eLib/5w.png"
+            alt=""
+            className="mx-auto"
+            height={1000}
+            width={1000}
+          />
+          <Image
+            src="/images/eLib/problem statement.jpg"
+            alt=""
+            className="mx-auto mt-4 rounded-[2rem]"
+            height={1000}
+            width={1000}
+          />
+        </div>
+      </section>
+
+      <section className="pt-[100px] lg:pt-[200px]">
+        <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem] ">
+          Empathize
+        </h1>
+        <div className=" space-y-20 bg-gray-100 py-20">
+          <Image
+            src="/images/eLib/professor user story.jpg"
+            alt="persona"
+            className="mx-auto  rounded-lg border object-cover"
+            width={1000}
+            height={1000}
+          />
+          <Image
+            src="/images/eLib/student user story.jpg"
+            alt="persona"
+            className="mx-auto  rounded-lg border object-cover"
+            width={1000}
+            height={1000}
+          />
+          <Image
+            src="/images/eLib/Professor Persona.jpg"
+            alt="persona"
+            className="mx-auto  rounded-lg border object-cover"
+            width={1000}
+            height={1000}
+          />{" "}
+          <Image
+            src="/images/eLib/Students Persona.jpg"
+            alt="persona"
+            className="mx-auto rounded-lg border object-cover"
+            width={1000}
+            height={1000}
+          />{" "}
+        </div>
+      </section>
+
+      <section className="pt-[100px] lg:pt-[200px]">
+        <h1 className="pb-10 text-[2.5rem] md:pb-20 md:text-[5rem]">Ideate</h1>
+        <div className="space-y-20 bg-gray-100 py-20 ">
+          <Image
+            src="/images/eLib/Big Picture Storyboard.jpg"
+            alt="wireframe"
+            height={1000}
+            width={1000}
+            className="mx-auto rounded-lg border object-cover"
+          />
+          <Image
+            src="/images/eLib/Close-up Storyboard.jpg"
+            alt="wireframe"
+            height={1000}
+            width={1000}
+            className="mx-auto rounded-lg border object-cover"
+          />
           <Image
             src="/images/eLib/Wireframe.jpg"
             alt="wireframe"
-            className="bject-cover rounded-lg border"
+            height={1000}
+            width={1000}
+            className="mx-auto rounded-lg border object-cover"
+          />
+        </div>
+      </section>
+
+      <section className="pt-[100px] lg:pt-[200px]">
+        <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem] ">
+          Style Guide
+        </h1>
+        <div className="bg-gray-100 py-20 ">
+          <Image
+            src="/images/morasilat/styleGuide.png"
+            alt="Design System"
             width={1000}
             height={1000}
+            className="mx-auto rounded-lg border object-cover"
           />
         </div>
+      </section>
 
-        <h1 className=" text-[2rem] font-bold">User Journey Map</h1>
-
-        <div className="mt-[1.5rem] flex space-x-4 ">
+      <section className="pt-[100px] lg:pt-[200px]">
+        <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem]">
+          Prototype
+        </h1>
+        <div className="bg-gray-100 py-20 ">
           <Image
-            src="/images/eLib/userJourney.jpg"
-            alt="user journey"
-            className="rounded-lg border object-cover"
+            src="/images/eLib/prototype.png"
+            alt="Design System"
             width={1000}
             height={1000}
+            className="mx-auto rounded-lg border object-cover"
           />
         </div>
-      </div>
+      </section>
 
-      <div className="mx-auto mt-[5rem] max-w-5xl">
-        <h1 className="mb-[1.5rem] text-[2rem] font-bold ">Hi-fi Mockups</h1>
-        <div className=" flex max-w-fit  rounded-[1rem] bg-accent-lightGray px-5 py-3 shadow-lg">
-          <Image
-            src="/images/eLib/first.png"
-            alt="Hi-fi Mockup"
-            className="object-cover"
-            height={250}
-            width={250}
-          />
-          <Image
-            src="/images/eLib/second.png"
-            alt="Hi-fi Mockup"
-            height={250}
-            width={250}
-          />
-          <Image
-            src="/images/eLib/third.png"
-            alt="Hi-fi Mockup"
-            className="object-cover"
-            height={250}
-            width={250}
-          />
+      <section id="research" className="pt-28">
+        <div className="flex flex-col justify-between pb-20 text-center md:text-left xl:flex-row">
+          <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem] ">
+            Research
+          </h1>
+          <p className="pt-2 text-[1.5rem] md:w-[55ch]">
+            We took on a mission that was to fix and redesign an existing
+            application which was incomplete in functionality. The main focus
+            was to make the make the application{" "}
+            <span className="font-bold">USEFUL.</span>
+          </p>
         </div>
-      </div>
-
-      <div className="mx-auto mb-[3rem] mt-[5rem] max-w-5xl ">
-        <h1 className="text-[2rem] font-bold  ">What I&apos;ve learned</h1>
-        <p className=" w-[55ch] leading-[140%]">
+        <div className=" space-y-20 bg-gray-100 py-20">
+          <Image
+            src="/images/eLib/UX Research.jpg"
+            alt="solution"
+            height={1000}
+            width={1000}
+            className="mx-auto rounded-lg border object-cover"
+          />{" "}
+          <Image
+            src="/images/eLib/affinity.jpg"
+            alt="solution"
+            height={1000}
+            width={1000}
+            className="mx-auto rounded-lg border object-cover"
+          />{" "}
+        </div>
+      </section>
+      <div className=" mb-[3rem] mt-[100px] flex flex-col md:mt-[200px] md:flex-row md:justify-between  ">
+        <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem] ">
+          Next Steps
+        </h1>
+        <p className=" text-[1.5rem] leading-[140%] md:w-[55ch]">
           E-Lib was a real world project where I collaborated with real people
-          to find a solution for the pain points that people are facing. I
-          applied the industry standard procedures for my project such as the
-          most important one:
-          <span className="font-semibold">The Design Thinking process</span>
+          to find a solution for the pain points that people are facing. I I
+          would like to develope the appliation do more of the usability testing
+          to clear my biases and vision in order to make a good product.
         </p>
       </div>
     </div>
   );
 }
 
-export default page;
+export default Library;

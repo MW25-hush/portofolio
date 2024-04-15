@@ -50,7 +50,9 @@ export default function Navbar() {
   ) : (
     <nav className="fixed  z-10 w-full bg-white shadow md:px-16">
       <div className="mx-auto flex  max-w-[100rem]  items-center   justify-between  py-4  font-bebas_neve ">
-        <div className="  text-[2.5rem] tracking-[0.05em] ">M@W</div>
+        <Link href={"/"} className="text-[2.5rem] tracking-[0.05em]">
+          M@W
+        </Link>
         <RiMenu3Line
           size={48}
           onClick={() => toggleMobileNav(true)}
@@ -58,14 +60,14 @@ export default function Navbar() {
         />
 
         <div className="hidden items-center space-x-8 font-helvetica text-lg capitalize md:flex ">
-          <Link
+          {/* <Link
             href={"/"}
             className={cx("text-accent-gray hover:text-primary", {
               "font-bold text-primary": pathname === "/",
             })}
           >
             projects
-          </Link>
+          </Link> */}
           <Link
             href={"/about"}
             className={cx("text-accent-gray hover:text-primary", {
