@@ -1,179 +1,248 @@
 "use client";
-import { Button } from "@/components/molecules/button";
 import Image from "next/image";
-import { useRouter } from "next/navigation";
-import { FaExternalLinkAlt } from "react-icons/fa";
+import Link from "next/link";
+import { FaFigma } from "react-icons/fa6";
 import { RiGithubLine } from "react-icons/ri";
 
 function Page() {
-  const { push } = useRouter();
   return (
-    <div className="col-start-2 col-end-12">
-      <section className="h-[85vh]">
-        <div>
-          <div className="flex h-3/4 items-center justify-center space-x-10">
-            <Image
-              src="/images/electronic/logo.png"
-              alt="Morasilat"
-              width={200}
-              height={200}
-            />
-            <div>
-              <h3 className="text-[2.5rem] font-bold">Electronic.AF</h3>
-              <p className="w-[46ch] text-[1.25rem] text-gray-400">
-                An online store for electronic suppliances in Afghanistan
-              </p>
-            </div>
-          </div>
-          <div className="">
-            {" "}
-            <Button
-              label="Website"
-              type="button"
-              intent={"tertiary"}
-              Icon={FaExternalLinkAlt}
-              handleClick={() => push("https://electronic-af.vercel.app/")}
-            />
-            <Button
-              label="Source Code"
-              type="button"
-              intent={"tertiary"}
-              handleClick={() =>
-                push("https://github.com/BahirHakimy/Electronic.AF")
-              }
-              Icon={RiGithubLine}
-            />
-          </div>
-        </div>
-        <div className="flex items-center justify-center space-x-2">
-          <p className="text-gray-500">Mohammad Mehdi Wahid</p>
-          <div className="h-5 border-r-2 border-black"></div>
-          <p className="font-bold text-cyan-600 ">April 2022 - August 2022</p>
-        </div>
-      </section>
-
-      <section className="mx-auto mt-[5rem] max-w-5xl  space-y-[3rem] py-[1rem] ">
-        <div className="flex space-x-4">
-          <div>
-            <h1 className="text-[2rem] font-bold  ">Project Overview</h1>
-            <div className=" w-10 border-b-4 border-black"></div>
-
-            <p className="w-[55ch] pt-2 leading-[140%]">
-              Electronics.AF is an online store for electronic suppliances in
-              Afghanistan. This website right now only services laptops.
-            </p>
-          </div>
-
-          <div>
-            <h1 className=" text-[2rem] font-bold">My Role</h1>
-            <div className=" w-10 border-b-4 border-black"></div>
-            <p className=" w-[55ch] pt-2 leading-[140%]">
-              Throughout this project I had the responsibility of conducting
-              research, making prototypes and hi-fi design and then developing
-              it using React Js.
-            </p>
-          </div>
-        </div>
-
-        <div className="flex space-x-4">
-          <div>
-            <h1 className=" text-[2rem] font-bold">Problem Statement</h1>
-            <div className=" w-10 border-b-4 border-black"></div>
-
-            <p className=" w-[55ch] pt-2 leading-[140%]">
-              We Wanted to develop an online website for selling electronics
-              such as laptops, mobile phones and so on, which is not so much
-              popular right now in Afghanistan.
-            </p>
-          </div>
-
-          <div>
-            <h1 className=" text-[2rem] font-bold">Solution</h1>
-            <div className=" w-10 border-b-4 border-black"></div>
-
-            <p className=" w-[55ch] pt-2 leading-[140%]">
-              I worked on this project for over a few months, first I designed
-              the application by making the first steps: Sketching, wireframing,
-              prototyping. I completely put my focus on what the client needed
-              and made my work user-centeric.
-            </p>
-          </div>
-        </div>
-
-        <div>
-          <h1 className=" text-[2rem] font-bold">User Research</h1>
-          <div className=" w-10 border-b-4 border-black"></div>
-
-          <p className=" w-[55ch]  pt-2 leading-[140%]">
-            I used competitive audit as my primary research method for this
-            project.
+    <div className="animationMy px-4 lg:px-16 2xl:mx-auto 2xl:max-w-[100rem]  ">
+      <div className="flex  items-center justify-center gap-8  pt-32">
+        <Image
+          src="/images/electronic/logo.png"
+          alt="Morasilat"
+          width={200}
+          height={200}
+        />
+        <div className="">
+          <h1 className="text-[2.5rem] font-bold">Electonics.AF</h1>
+          <p className="w-[26ch] text-[1.25rem] text-gray-600">
+            An online store for electronic suppliances in Afghanistan
           </p>
         </div>
-      </section>
-
-      <div className="mx-auto mt-[5rem] max-w-5xl space-y-2">
-        <h1 className="text-[2rem] font-bold">Persona</h1>
-
-        <Image
-          src="/images/electronic/persona.png"
-          alt="persona"
-          className=" rounded-lg border  object-cover  "
-          width={1000}
-          height={1000}
-        />
+      </div>
+      <div className="flex flex-col items-center justify-center gap-8 pt-10 md:flex-row ">
+        <div className="hover: flex items-center gap-4 px-4 py-2 hover:rounded-full hover:bg-yellow-200 ">
+          <FaFigma size="32" />
+          <Link
+            className="text-[1.5rem]"
+            href="https://www.figma.com/proto/KAD0MPFAyeLyCcs1tOY02i/Faculty-Library-Mobile-App?page-id=47%3A107&type=design&node-id=52-189&viewport=201%2C203%2C0.08&t=p0WhrA3F5yeCWiuO-1&scaling=scale-down&starting-point-node-id=52%3A189&mode=design"
+          >
+            Prototype
+          </Link>
+        </div>
+        <div className="flex items-center gap-4 px-4 py-2 hover:rounded-full hover:bg-gray-950 hover:text-white ">
+          <RiGithubLine size="32" />
+          <Link
+            href="https://github.com/BahirHakimy/Electronic.AF"
+            className="text-[1.5rem]"
+          >
+            Source Code
+          </Link>
+        </div>
+      </div>
+      <div className="flex  flex-col justify-between gap-12  pt-28 lg:flex-row">
+        <div className="">
+          <h1 className="text-[2rem] font-bold">Overview</h1>
+          <p className="max-w-prose text-[1.5rem] lg:w-[45ch] ">
+            Electronics.AF is an online store for electronic suppliances in
+            Afghanistan. This website right now only services laptops.
+          </p>
+        </div>
+        <div className="flex flex-col gap-4">
+          <div>
+            <h1 className="text-[2rem] font-bold">My Role</h1>
+            <p className="text-[1.5rem]">UX/UI Designer, Front-end developer</p>
+          </div>
+          <div>
+            <h1 className=" text-[2rem] font-bold">Duration</h1>
+            <p className="text-[1.5rem]">5 months</p>
+          </div>
+          <div>
+            <h1 className="text-[2rem] font-bold">Tools & Technologies</h1>
+            <p className="max-w-prose text-[1.5rem] lg:w-[35ch] ">
+              Paper and Pencil, Figma, Adobe Illustrator, React, Redux, Tailwind
+              CSS
+            </p>
+          </div>
+        </div>
       </div>
 
-      <div className="mx-auto mt-[5rem] max-w-5xl">
-        <h1 className=" text-[2rem] font-bold">Digital Wireframes</h1>
-        <div className="mt-[1.5rem] flex flex-col space-y-4 ">
+      <section className=" pt-[100px]  lg:pt-[200px]">
+        <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem] ">
+          Design Process
+        </h1>
+        <div className="flex justify-center">
           <Image
-            src="/images/clinic/frame 4.png"
-            alt="wireframe"
-            className="bject-cover rounded-lg border"
+            src="/images/morasilat/design process.png"
+            alt=""
             width={1000}
             height={1000}
-          />
-          <Image
-            src="/images/clinic/frame 5.png"
-            alt="wireframe"
-            className="bject-cover rounded-lg border"
-            width={1000}
-            height={1000}
+            className="object-cover"
           />
         </div>
+      </section>
 
-        {/* <h1 className=" text-[2rem] font-bold">User Journey Map</h1>
-
-        <div className="mt-[1.5rem] flex space-x-4 ">
+      <section className="pt-[100px] lg:pt-[200px]">
+        <h1 className=" pb-10 text-[2.5rem] md:pb-20 md:text-[5rem]">Define</h1>
+        <div className="space-y-20 rounded-xl bg-gray-100 py-20">
           <Image
-            src="/images/eLib/userJourney.jpg"
-            alt="user journey"
-            className="rounded-lg border object-cover"
+            src="/images/eLib/5w.png"
+            alt=""
+            className="mx-auto"
+            height={1000}
+            width={1000}
+          />
+          <Image
+            src="/images/eLib/problem statement.jpg"
+            alt=""
+            className="mx-auto mt-4 rounded-[2rem]"
+            height={1000}
+            width={1000}
+          />
+        </div>
+      </section>
+
+      <section className="pt-[100px] lg:pt-[200px]">
+        <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem] ">
+          Empathize
+        </h1>
+        <div className=" space-y-20 bg-gray-100 py-20">
+          <Image
+            src="/images/eLib/professor user story.jpg"
+            alt="persona"
+            className="mx-auto  rounded-lg border object-cover"
             width={1000}
             height={1000}
           />
-        </div> */}
-      </div>
-
-      <section className="mx-auto mb-4 mt-[5rem] max-w-5xl">
-        <h1 className="mb-[1.5rem] text-[2rem] font-bold ">Hi-fi Mockups</h1>
-        <div className=" flex flex-col space-y-4">
           <Image
-            src="/images/electronic/HomePage.png"
-            alt="Hi-fi Mockup"
-            className="object-cover"
-            height={1000}
+            src="/images/eLib/student user story.jpg"
+            alt="persona"
+            className="mx-auto  rounded-lg border object-cover"
             width={1000}
+            height={1000}
+          />
+          <Image
+            src="/images/eLib/Professor Persona.jpg"
+            alt="persona"
+            className="mx-auto  rounded-lg border object-cover"
+            width={1000}
+            height={1000}
           />{" "}
           <Image
-            src="/images/electronic/login.png"
-            alt="Hi-fi Mockup"
-            className="object-cover"
+            src="/images/eLib/Students Persona.jpg"
+            alt="persona"
+            className="mx-auto rounded-lg border object-cover"
+            width={1000}
+            height={1000}
+          />{" "}
+        </div>
+      </section>
+
+      <section className="pt-[100px] lg:pt-[200px]">
+        <h1 className="pb-10 text-[2.5rem] md:pb-20 md:text-[5rem]">Ideate</h1>
+        <div className="space-y-20 bg-gray-100 py-20 ">
+          <Image
+            src="/images/eLib/Big Picture Storyboard.jpg"
+            alt="wireframe"
             height={1000}
             width={1000}
+            className="mx-auto rounded-lg border object-cover"
+          />
+          <Image
+            src="/images/eLib/Close-up Storyboard.jpg"
+            alt="wireframe"
+            height={1000}
+            width={1000}
+            className="mx-auto rounded-lg border object-cover"
+          />
+          <Image
+            src="/images/eLib/Wireframe.jpg"
+            alt="wireframe"
+            height={1000}
+            width={1000}
+            className="mx-auto rounded-lg border object-cover"
           />
         </div>
       </section>
+
+      <section className="pt-[100px] lg:pt-[200px]">
+        <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem] ">
+          Style Guide
+        </h1>
+        <div className="bg-gray-100 py-20 ">
+          <Image
+            src="/images/morasilat/styleGuide.png"
+            alt="Design System"
+            width={1000}
+            height={1000}
+            className="mx-auto rounded-lg border object-cover"
+          />
+        </div>
+      </section>
+
+      <section className="pt-[100px] lg:pt-[200px]">
+        <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem]">
+          Prototype
+        </h1>
+        <div className="bg-gray-100 py-20 ">
+          <Image
+            src="/images/eLib/prototype.png"
+            alt="Design System"
+            width={1000}
+            height={1000}
+            className="mx-auto rounded-lg border object-cover"
+          />
+        </div>
+      </section>
+
+      <section id="research" className="pt-28">
+        <div className="flex flex-col justify-between pb-20 text-center md:text-left xl:flex-row">
+          <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem] ">
+            Research
+          </h1>
+          <p className="pt-2 text-[1.5rem] md:w-[55ch]">
+            We took on a mission that was to fix and redesign an existing
+            application which was incomplete in functionality. The main focus
+            was to make the make the application{" "}
+            <span className="font-bold">USEFUL.</span>
+          </p>
+        </div>
+        <div className=" space-y-20 bg-gray-100 py-20">
+          <Image
+            src="/images/eLib/UX Research.jpg"
+            alt="solution"
+            height={1000}
+            width={1000}
+            className="mx-auto rounded-lg border object-cover"
+          />{" "}
+          <Image
+            src="/images/eLib/affinity.jpg"
+            alt="solution"
+            height={1000}
+            width={1000}
+            className="mx-auto rounded-lg border object-cover"
+          />{" "}
+          <Image
+            src="/images/eLib/patten-identification.jpg"
+            alt="solution"
+            height={1000}
+            width={1000}
+            className="mx-auto rounded-lg border object-cover"
+          />
+        </div>
+      </section>
+      <div className=" mb-[3rem] mt-[100px] flex flex-col md:mt-[200px] md:flex-row md:justify-between  ">
+        <h1 className="pb-10 text-[2.5rem] md:pb-20  md:text-[5rem] ">
+          Next Steps
+        </h1>
+        <p className=" text-[1.5rem] leading-[140%] md:w-[55ch]">
+          E-Lib was a real world project where I collaborated with real people
+          to find a solution for the pain points that people are facing. I I
+          would like to develope the appliation do more of the usability testing
+          to clear my biases and vision in order to make a good product.
+        </p>
+      </div>
     </div>
   );
 }
