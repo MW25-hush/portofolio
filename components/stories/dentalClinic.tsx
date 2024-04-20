@@ -19,7 +19,7 @@ function Clinic() {
         <div className="group flex w-fit items-center space-x-2 pb-2 pt-8 lg:pb-0">
           <Link
             className="text-[1.5rem] font-semibold text-gray-200 group-hover:text-gray-400 "
-            href={"/projects/morasilat"}
+            href={"/projects/clinic"}
           >
             Case Study
           </Link>
