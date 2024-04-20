@@ -27,7 +27,12 @@ function Clinic() {
         </div>
       </div>
       <div className="col-span-4 ">
-        <Image src={clinicCover} alt="cover" className="  object-cover" />
+        <Image
+          src={clinicCover}
+          alt="cover"
+          className="  object-cover"
+          placeholder="blur"
+        />
       </div>
     </div>
   );

@@ -26,7 +26,12 @@ function MovieTime() {
         </div>
       </div>
       <div className="col-span-4 ">
-        <Image src={movieCover} alt="" className="  object-cover" />
+        <Image
+          src={movieCover}
+          alt=""
+          className="  object-cover"
+          placeholder="blur"
+        />
       </div>
     </div>
   );

@@ -9,7 +9,12 @@ function ELib() {
   return (
     <div className=" mb-4 flex grid-cols-6 flex-col items-center lg:grid ">
       <div className="col-span-4  ">
-        <Image src={eLib} alt="" className="  object-cover" />
+        <Image
+          src={eLib}
+          alt=""
+          className="  object-cover"
+          placeholder="blur"
+        />
       </div>
       <div className="col-span-2 flex h-full w-full flex-col  justify-center bg-[#79CDF6] px-4">
         <h1 className=" text-[2.5rem] font-bold text-gray-950">E-Library</h1>

@@ -26,7 +26,12 @@ function Morasilat() {
         </div>
       </div>
       <div className="order-1 col-span-4 lg:order-none ">
-        <Image src={morasilatCover} alt="" className="  object-cover" />
+        <Image
+          src={morasilatCover}
+          alt=""
+          className="  object-cover"
+          placeholder="blur"
+        />
       </div>
     </div>
   );
