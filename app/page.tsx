@@ -30,7 +30,7 @@ export default function Home() {
         <div className=" animationMy  flex flex-col items-center gap-4 lg:flex-row   ">
           <div className="order-2 lg:order-none">
             <h1 className="  text-center text-[2.5rem] font-bold leading-[1.25] md:text-[3rem] lg:text-left ">
-              UI/UX Designer{" "}
+              UI/UX Designer{" "} 
             </h1>
 
             <p className="px-4 pt-5 text-center text-gray-600 md:pt-5 md:text-[1.25rem] lg:px-0 lg:text-left">
