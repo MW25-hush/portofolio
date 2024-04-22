@@ -4,7 +4,7 @@ import Navbar from "@/components/organisms/navbar";
 import Footer from "@/components/organisms/Footer";
 
 export const metadata: Metadata = {
-  title: "Mehdi Wahid Portofolio",
+  title: "Mehdi Wahid • Front-end Engineer",
   description: "portfolio for my site",
 };
 

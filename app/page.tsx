@@ -25,24 +25,23 @@ export default function Home() {
   return (
     <div className="pt-40">
       <div className="mx-auto max-w-6xl">
-        <div className=" animationMy  flex flex-col items-center gap-4 lg:flex-row   ">
-          <div className="order-2 lg:order-none">
-            <h1 className="  text-center text-[2.5rem] font-bold leading-[1.25] md:text-[3rem] lg:text-left ">
-              Front-End React Developer{" "}
+        <div className=" animationMy  flex flex-col items-center gap-4 lg:flex-row lg:justify-between">
+          <div className="order-2 max-w-[80ch] lg:order-none">
+            <p>Hello</p>
+            <h1 className="  text-center text-[2.5rem]  leading-[1.25] md:text-[3rem] lg:text-left lg:text-[4rem] ">
+              I&apos;m Mehdi Wahid.{" "}
+              <span className="font-bold">A Front-End Engineer </span>
             </h1>
-
-            <p className="px-4 pt-5 text-center text-gray-600 md:pt-5 md:text-[1.25rem] lg:px-0 lg:text-left">
-              Hi, I&apos;m Mohammad Mehdi Wahid. I specialize in sketching
-              creative ideas and crafting elegant solutions, bringing the prduct
-              to life through mastery in React and NextJs to help people enhance
-              their work processes.
+            <p className="max-w-prose text-[1.5rem]">
+              with a focus on user experience | Proficient in Next.js,
+              TypeScript, and JavaScript, Tailwind CSS | I build to help people!
             </p>
           </div>
           <div className="order-1 lg:order-none">
             <Image
               src={myPhoto}
               alt="photo"
-              className=" w-[300px] rounded-full   border border-primary object-cover lg:w-[800px]   "
+              className=" w-[300px] rounded-full   border border-primary object-cover    "
             />
           </div>
         </div>
@@ -57,7 +56,7 @@ export default function Home() {
                 key={icon}
                 src={`https://skillicons.dev/icons?i=${icon}`}
                 alt="icons"
-                className="animationOffset cursor-pointer  transition-transform duration-200  ease-in-out hover:-translate-y-6"
+                className="animationOffset cursor-pointer  transition-transform duration-200  ease-in-out"
                 height={50}
                 width={55}
                 title={icon}
@@ -70,7 +69,6 @@ export default function Home() {
       {/* projects section  */}
       <div className="mx-4 mb-20 mt-40 max-w-6xl space-y-28 xl:mx-auto">
         <Morasilat />
-
         <Clinic />
         <ElectronicAf />
         <MovieTime />
