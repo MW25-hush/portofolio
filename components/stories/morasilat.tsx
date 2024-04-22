@@ -15,15 +15,6 @@ function Morasilat() {
           transmission of documents throughout the{" "}
           <span className="font-bold">Kabul University</span>.
         </p>
-        <div className="group flex w-fit items-center space-x-2 pb-4 pt-8 lg:pb-0">
-          <Link
-            className="text-[1.5rem] font-semibold text-gray-200 group-hover:text-gray-400 "
-            href={"/projects/morasilat"}
-          >
-            Case Study
-          </Link>
-          <FaChevronRight className="text-gray-200 group-hover:text-gray-400" />
-        </div>
       </div>
       <div className="order-1 col-span-4 lg:order-none ">
         <Image

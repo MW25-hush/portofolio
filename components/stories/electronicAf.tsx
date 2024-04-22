@@ -22,15 +22,6 @@ function ElectronicAf() {
         <p className="pt-2 text-gray-950">
           Online store for electronic suppliances in Afghanistan.
         </p>
-        <div className="lg:pb-0` group flex w-fit items-center space-x-2 pb-2 pt-8">
-          <Link
-            className="text-[1.5rem] font-semibold text-gray-950 group-hover:text-gray-200 "
-            href={"/projects/electronic"}
-          >
-            Case Study
-          </Link>
-          <FaChevronRight className="text-gray-950 group-hover:text-gray-200" />
-        </div>
       </div>
     </div>
   );

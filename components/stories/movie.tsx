@@ -15,15 +15,6 @@ function MovieTime() {
         <p className="pt-2 text-[1.125rem] text-gray-950">
           Movie Time lets you explore movies and Tv shows
         </p>
-        <div className="group flex w-fit items-center space-x-2 pt-8">
-          <Link
-            className="pb-2 text-[1.5rem] font-semibold text-gray-950 group-hover:text-gray-100 lg:pb-0 "
-            href={"/projects/movie-time"}
-          >
-            Case Study
-          </Link>
-          <FaChevronRight className="text-gray-950 group-hover:text-gray-100" />
-        </div>
       </div>
       <div className="col-span-4 ">
         <Image

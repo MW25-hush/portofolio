@@ -16,15 +16,6 @@ function Clinic() {
           A database management system for a dental clinic using Next Js and
           Firebase
         </p>
-        <div className="group flex w-fit items-center space-x-2 pb-2 pt-8 lg:pb-0">
-          <Link
-            className="text-[1.5rem] font-semibold text-gray-200 group-hover:text-gray-400 "
-            href={"/projects/clinic"}
-          >
-            Case Study
-          </Link>
-          <FaChevronRight className="text-gray-200 group-hover:text-gray-400" />
-        </div>
       </div>
       <div className="col-span-4 ">
         <Image

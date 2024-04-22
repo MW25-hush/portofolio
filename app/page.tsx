@@ -3,7 +3,6 @@
 import Image from "next/image";
 import Morasilat from "../components/stories/morasilat";
 import myPhoto from "../public/images/myPhoto.jpg";
-import ELib from "@/components/stories/eLib";
 import Clinic from "@/components/stories/dentalClinic";
 import ElectronicAf from "@/components/stories/electronicAf";
 import MovieTime from "@/components/stories/movie";
@@ -71,7 +70,7 @@ export default function Home() {
       {/* projects section  */}
       <div className="mx-4 mb-20 mt-40 max-w-6xl space-y-28 xl:mx-auto">
         <Morasilat />
-        <ELib />
+
         <Clinic />
         <ElectronicAf />
         <MovieTime />
