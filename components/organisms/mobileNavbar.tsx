@@ -38,7 +38,7 @@ function MobileNav({
           onClick={() => download()}
           className="border-b py-3 pl-4 text-[1.5rem] text-accent-gray"
         >
-          CV
+          Resume
         </Link>
       </div>
     </aside>

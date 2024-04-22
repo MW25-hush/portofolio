@@ -4,8 +4,7 @@ import Navbar from "@/components/organisms/navbar";
 import Footer from "@/components/organisms/Footer";
 
 export const metadata: Metadata = {
-  title: "Mehdi Wahid Portofolio",
-  description: "portfolio for my site",
+  title: "Mehdi Wahid • UX/UI Designer",
 };
 
 export default function RootLayout({

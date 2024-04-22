@@ -27,7 +27,7 @@ function ElectronicAf() {
             className="text-[1.5rem] font-semibold text-gray-950 group-hover:text-gray-200 "
             href={"/projects/electronic"}
           >
-            Case Study
+            Read More
           </Link>
           <FaChevronRight className="text-gray-950 group-hover:text-gray-200" />
         </div>

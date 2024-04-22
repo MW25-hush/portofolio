@@ -74,7 +74,7 @@ export default function Navbar() {
             onClick={() => Download()}
             className="text-accent-gray"
           >
-            CV
+            Resume
           </Link>
         </div>
       </div>

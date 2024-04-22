@@ -20,7 +20,7 @@ function MovieTime() {
             className="pb-2 text-[1.5rem] font-semibold text-gray-950 group-hover:text-gray-100 lg:pb-0 "
             href={"/projects/movie-time"}
           >
-            Case Study
+            Read More
           </Link>
           <FaChevronRight className="text-gray-950 group-hover:text-gray-100" />
         </div>

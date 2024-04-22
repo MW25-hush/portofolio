@@ -20,7 +20,7 @@ function Morasilat() {
             className="text-[1.5rem] font-semibold text-gray-200 group-hover:text-gray-400 "
             href={"/projects/morasilat"}
           >
-            Case Study
+            Read More
           </Link>
           <FaChevronRight className="text-gray-200 group-hover:text-gray-400" />
         </div>
