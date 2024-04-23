@@ -1,50 +1,20 @@
 "use client";
 
 import Image from "next/image";
-import Link from "next/link";
-import { FaFigma } from "react-icons/fa6";
-import { FiYoutube } from "react-icons/fi";
-import { RiGithubLine } from "react-icons/ri";
 
 function Morasilat() {
   return (
     <div className="animationMy px-4 lg:px-16 2xl:mx-auto 2xl:max-w-[100rem]  ">
       <div className="flex justify-center pt-32">
         <Image
-          src="/images/Morasilat.png"
+          src="/images/morasilat/Morasilat.png"
           alt="Morasilat"
           width={200}
           height={200}
+          className=""
         />
       </div>
-      <div className="flex flex-col items-center justify-center gap-8 pt-10 md:flex-row ">
-        <div className="flex items-center   gap-4 hover:rounded-full hover:bg-red-500 hover:px-4 hover:py-2 hover:text-white">
-          <FiYoutube size="32" />
-          <Link href="https://youtu.be/i0unxiBXC90" className="text-[1.5rem]">
-            Demo
-          </Link>
-        </div>
 
-        <div className="flex items-center gap-4 hover:rounded-full hover:bg-gray-950   hover:px-4 hover:py-2 hover:text-white ">
-          <RiGithubLine size="32" />
-          <Link
-            href="https://github.com/Mehdi-UX-Dev/Murasilat_V2.0"
-            className="text-[1.5rem]"
-          >
-            Source Code
-          </Link>
-        </div>
-
-        <div className="hover: flex items-center gap-4 hover:rounded-full hover:bg-yellow-200 hover:px-4 hover:py-2 ">
-          <FaFigma size="32" />
-          <Link
-            className="text-[1.5rem]"
-            href="https://www.figma.com/proto/8vlqCoQtKdcnrDMHURHHcf/Morasilat?page-id=107%3A321&type=design&node-id=496-748&viewport=180%2C309%2C0.13&t=HminhZjB3XUljiyY-1&scaling=scale-down&starting-point-node-id=779%3A755&show-proto-sidebar=1&mode=design"
-          >
-            Prototype
-          </Link>
-        </div>
-      </div>
       <div className="flex  flex-col justify-between gap-12  pt-28 lg:flex-row">
         <div className="">
           <h1 className="text-[2rem] font-bold">Overview</h1>
