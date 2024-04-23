@@ -10,26 +10,26 @@ import Link from "next/link";
 function MovieTime() {
   return (
     <div className="mb-4 flex grid-cols-6 flex-col items-center lg:grid    ">
-      <div className=" order-2 col-span-2 flex h-full w-full flex-col justify-center  bg-[#B275F0] px-4 lg:order-none">
+      <div className=" order-2 col-span-2 flex h-full w-full flex-col justify-center bg-[#B275F0]  px-4 lg:order-none lg:px-10">
         <h1 className=" text-[2.5rem] font-bold text-gray-950">Movie Time</h1>
         <p className="pt-2 text-[1.125rem] text-gray-950">
           Movie Time lets you explore movies and Tv shows
         </p>
         <div className="group flex w-fit items-center space-x-2 pt-8">
           <Link
-            className="pb-2 text-[1.5rem] font-semibold text-gray-950 group-hover:text-gray-100 lg:pb-0 "
+            className="pb-2 text-[1.5rem] font-semibold italic text-gray-950 group-hover:text-white lg:pb-0 "
             href={"/projects/movie-time"}
           >
             Read More
           </Link>
-          <FaChevronRight className="text-gray-950 group-hover:text-gray-100" />
+          <FaChevronRight className="text-gray-950 group-hover:text-white" />
         </div>
       </div>
       <div className="col-span-4 ">
         <Image
           src={movieCover}
           alt=""
-          className="  object-cover"
+          className="object-cover"
           placeholder="blur"
         />
       </div>
