@@ -32,7 +32,7 @@ function Morasilat() {
             <Link
               target="_blank"
               href={"https://github.com/Mehdi-UX-Dev/Murasilat_V2.0"}
-              className="flex w-fit gap-4   transition-all  duration-100 ease-in-out hover:rounded-full hover:bg-gray-800 hover:p-4 hover:text-white"
+              className="flex w-fit gap-4   transition-all  duration-200 ease-in-out hover:rounded-full hover:bg-gray-800 hover:p-4 hover:text-white"
             >
               <LuGithub size="40" />
               <p className="text-[1.5rem]">Source Code</p>
@@ -42,7 +42,7 @@ function Morasilat() {
             <Link
               href={"https://www.youtube.com/watch?v=i0unxiBXC90"}
               target="_blank"
-              className="flex w-fit gap-4 transition-all  duration-100 ease-in-out  hover:rounded-full hover:bg-red-600 hover:p-4 hover:text-white"
+              className="flex w-fit gap-4 transition-all  duration-200 ease-in-out  hover:rounded-full hover:bg-red-600 hover:px-8 hover:py-4 hover:text-white"
             >
               <FiYoutube size="40" />
               <p className="text-[1.5rem]">Demo</p>
