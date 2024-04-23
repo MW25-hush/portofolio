@@ -21,17 +21,7 @@ function Library() {
           </p>
         </div>
       </div>
-      <div className="flex flex-col items-center justify-center gap-8 pt-10 md:flex-row ">
-        <div className="hover: flex items-center gap-4 hover:rounded-full hover:bg-yellow-200 hover:px-4 hover:py-2 ">
-          <FaFigma size="32" />
-          <Link
-            className="text-[1.5rem]"
-            href="https://www.figma.com/proto/KAD0MPFAyeLyCcs1tOY02i/Faculty-Library-Mobile-App?page-id=47%3A107&type=design&node-id=52-189&viewport=201%2C203%2C0.08&t=p0WhrA3F5yeCWiuO-1&scaling=scale-down&starting-point-node-id=52%3A189&mode=design"
-          >
-            Prototype
-          </Link>
-        </div>
-      </div>
+      <div className="flex flex-col items-center justify-center gap-8 pt-10 md:flex-row "></div>
       <div className="flex  flex-col justify-between gap-12  pt-28 lg:flex-row">
         <div className="">
           <h1 className="text-[2rem] font-bold">Overview</h1>
