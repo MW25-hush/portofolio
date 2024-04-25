@@ -1,8 +1,5 @@
 "use client";
 import Image from "next/image";
-import Link from "next/link";
-import { FaFigma } from "react-icons/fa6";
-import { RiGithubLine } from "react-icons/ri";
 
 function Page() {
   return (
@@ -47,6 +44,29 @@ function Page() {
             </p>
           </div>
         </div>
+      </div>
+
+      <div className="mt-40 flex justify-center ">
+        <video
+          controls
+          preload="none"
+          className="w-full rounded-xl"
+          poster="/images/electronic/electronicCover.png"
+        >
+          <source src="/images/electronic/demo.mp4" type="video/mp4" />
+          your browser does not support this video
+        </video>
+      </div>
+
+      <div className="mt-40 ">
+        <h1 className="mb-10 text-[4rem]">Final Mockup</h1>
+        <Image
+          src="/images/electronic/electronicCover.png"
+          width={500}
+          height={500}
+          className="w-full rounded-xl object-cover"
+          alt="mockup"
+        />
       </div>
     </div>
   );
