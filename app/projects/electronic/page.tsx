@@ -30,7 +30,7 @@ function Page() {
         <div className="flex flex-col gap-4">
           <div>
             <h1 className="text-[2rem] font-bold">My Role</h1>
-            <p className="text-[1.5rem]">UX/UI Designer, Front-end developer</p>
+            <p className="text-[1.5rem]">UI Designer, Front-end developer</p>
           </div>
           <div>
             <h1 className=" text-[2rem] font-bold">Duration</h1>

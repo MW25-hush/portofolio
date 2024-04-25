@@ -31,7 +31,7 @@ function Clinic() {
         <div className="flex flex-col gap-4">
           <div>
             <h1 className="text-[2rem] font-bold">My Role</h1>
-            <p className="text-[1.5rem]">UX/UI Designer, Software Developer</p>
+            <p className="text-[1.5rem]">UI Designer, Software Developer</p>
           </div>
           <div>
             <h1 className=" text-[2rem] font-bold">Duration</h1>
@@ -48,15 +48,26 @@ function Clinic() {
       </div>
 
       <div className="mt-40 flex justify-center ">
-        <video  controls  preload="none" className="rounded-xl w-full" poster="/images/clinic/poster.png">
-          <source src="/images/clinic/demo.mp4" type="video/mp4"/>
+        <video
+          controls
+          preload="none"
+          className="w-full rounded-xl"
+          poster="/images/clinic/poster.png"
+        >
+          <source src="/images/clinic/demo.mp4" type="video/mp4" />
           no video
         </video>
       </div>
 
       <div className="mt-40 ">
-        <h1 className="text-[4rem] mb-10">Final Mockup</h1>
-        <Image src="/images/clinic/mockup.png" width={500} height={500} className="w-full rounded-xl object-cover" alt="mockup" />
+        <h1 className="mb-10 text-[4rem]">Final Mockup</h1>
+        <Image
+          src="/images/clinic/mockup.png"
+          width={500}
+          height={500}
+          className="w-full rounded-xl object-cover"
+          alt="mockup"
+        />
       </div>
     </div>
   );
