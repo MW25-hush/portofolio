@@ -47,8 +47,16 @@ function Clinic() {
         </div>
       </div>
 
-      <div className="mt-20 flex justify-center">
-        <Image src="/images/clinic/gif.gif" width="1000" height={400} alt="" />
+      <div className="mt-40 flex justify-center ">
+        <video  controls  preload="none" className="rounded-xl w-full" poster="/images/clinic/poster.png">
+          <source src="/images/clinic/demo.mp4" type="video/mp4"/>
+          no video
+        </video>
+      </div>
+
+      <div className="mt-40 ">
+        <h1 className="text-[4rem] mb-10">Final Mockup</h1>
+        <Image src="/images/clinic/mockup.png" width={500} height={500} className="w-full rounded-xl object-cover" alt="mockup" />
       </div>
     </div>
   );
