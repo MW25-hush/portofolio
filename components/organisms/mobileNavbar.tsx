@@ -13,7 +13,7 @@ function MobileNav({
   shutNav: Dispatch<SetStateAction<boolean>>;
 }) {
   return (
-    <aside className="absolute right-0 z-10 h-screen w-2/3 bg-white    ">
+    <aside className="fixed right-0 z-10 h-screen w-2/3 bg-white    ">
       <div className="mx-4 flex  items-center justify-between pt-4 ">
         <Link href={"/"} className="text-[2.5rem] tracking-[0.05em]">
           M@W
@@ -24,9 +24,9 @@ function MobileNav({
         <Link
           href={"/about"}
           className={cx(
-            "border-b py-3 pl-4 text-[1.5rem] text-accent-gray hover:text-primary",
+            "text-accent-gray hover:text-primary border-b py-3 pl-4 text-[1.5rem]",
             {
-              "font-bold text-primary": pathname === "/about",
+              "text-primary font-bold": pathname === "/about",
             },
           )}
         >
@@ -36,7 +36,7 @@ function MobileNav({
         <Link
           href={"#"}
           onClick={() => download()}
-          className="border-b py-3 pl-4 text-[1.5rem] text-accent-gray"
+          className="text-accent-gray border-b py-3 pl-4 text-[1.5rem]"
         >
           Resume
         </Link>
