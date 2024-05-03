@@ -7,15 +7,15 @@ import Link from "next/link";
 
 function Morasilat() {
   return (
-    <div className="mb-4 flex grid-cols-6 flex-col items-center lg:grid   ">
-      <div className="order-2  col-span-2 flex h-full w-full flex-col justify-center bg-[#8db2c3]  px-4 lg:order-none lg:px-10">
+    <div className="mb-4 flex grid-cols-6 flex-col items-center lg:grid">
+      <div className="order-2 col-span-2  flex h-full w-full flex-col justify-center bg-[#8db2c3] px-4 py-8 lg:order-none lg:px-10 lg:py-0">
         <h1 className="pb-4 text-[2.5rem] font-bold ">Morasilat</h1>
         <p className="pb-8 text-[1.125rem] md:w-[55ch] lg:w-full">
           <span className="font-bold">Official</span> application for digital
           transmission of documents throughout the{" "}
           <span className="font-bold">Kabul University</span>.
         </p>
-        <div className="group flex w-fit items-center space-x-2 pb-4 pt-8 lg:pb-0 lg:pt-0">
+        <div className="group flex w-fit items-center gap-2  ">
           <Link
             className="text-[1.5rem] font-semibold italic group-hover:text-white  "
             href={"/projects/morasilat"}
