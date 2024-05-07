@@ -15,7 +15,7 @@ function Clinic() {
         </p>
         <div className="flex">
           <LuAsterisk />
-          <p>Protected by NDA.</p>
+          <p>Protected by NDA(Non Disclosure Agreement).</p>
         </div>
       </div>
       <div className="col-span-4 ">

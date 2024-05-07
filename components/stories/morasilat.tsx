@@ -3,7 +3,7 @@
 import Image from "next/image";
 import morasilatCover from "../../public/images/morasilat/morasilatCover.png";
 import Link from "next/link";
-import { LuGithub } from "react-icons/lu";
+import { LuAsterisk, LuGithub } from "react-icons/lu";
 import { FiYoutube } from "react-icons/fi";
 
 function Morasilat() {
@@ -27,27 +27,9 @@ function Morasilat() {
           transmission of documents throughout the{" "}
           <span className="font-bold">Kabul University</span>.
         </p>
-        <div className="space-y-4">
-          <div>
-            <Link
-              target="_blank"
-              href={"https://github.com/Mehdi-UX-Dev/Murasilat_V2.0"}
-              className="flex w-fit gap-4   transition-all  duration-200 ease-in-out hover:rounded-full hover:bg-gray-800 hover:p-4 hover:text-white"
-            >
-              <LuGithub size="40" />
-              <p className="text-[1.5rem]">Source Code</p>
-            </Link>
-          </div>
-          <div>
-            <Link
-              href={"https://www.youtube.com/watch?v=i0unxiBXC90"}
-              target="_blank"
-              className="flex w-fit gap-4 transition-all  duration-200 ease-in-out  hover:rounded-full hover:bg-red-600 hover:px-8 hover:py-4 hover:text-white"
-            >
-              <FiYoutube size="40" />
-              <p className="text-[1.5rem]">Demo</p>
-            </Link>
-          </div>
+        <div className="flex">
+          <LuAsterisk />
+          <p>Protected by NDA(Non Disclosure Agreement).</p>
         </div>
       </div>
     </div>
