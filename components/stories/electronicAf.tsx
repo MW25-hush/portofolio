@@ -1,7 +1,11 @@
 "use client";
 
 import React from "react";
-import { FaChevronRight, FaExternalLinkAlt } from "react-icons/fa";
+import {
+  FaChevronRight,
+  FaExternalLinkAlt,
+  FaInfoCircle,
+} from "react-icons/fa";
 import Image from "next/image";
 import electronicAF from "@/public/images/electronic/electronicCover.png";
 import Link from "next/link";
@@ -9,7 +13,7 @@ import { LuGithub } from "react-icons/lu";
 
 function ElectronicAf() {
   return (
-    <div className="mb-4 flex grid-cols-6 flex-col items-center lg:grid  ">
+    <div className="mb-4 flex flex-col items-center lg:grid lg:grid-cols-6  ">
       <div className="col-span-4 ">
         <Image
           src={electronicAF}
@@ -18,7 +22,9 @@ function ElectronicAf() {
           placeholder="blur"
         />
       </div>
-      <div className=" col-span-2 flex h-full w-full flex-col justify-center  bg-[#899FDC] px-4 lg:px-10">
+      <div className="relative col-span-2 flex h-full w-full flex-col justify-center  bg-[#899FDC] px-4 lg:px-10">
+        <FaInfoCircle size="24" className="absolute right-4 top-4" />
+
         <h1 className="pb-4 text-[2.5rem] font-bold text-gray-950">
           Electronic.AF
         </h1>

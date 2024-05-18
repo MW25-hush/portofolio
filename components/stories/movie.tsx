@@ -2,7 +2,11 @@
 
 import React from "react";
 import { useRouter } from "next/navigation";
-import { FaChevronRight, FaExternalLinkAlt } from "react-icons/fa";
+import {
+  FaChevronRight,
+  FaExternalLinkAlt,
+  FaInfoCircle,
+} from "react-icons/fa";
 import movieCover from "@/public/images/movieDB/movieCover.png";
 import Image from "next/image";
 import Link from "next/link";
@@ -10,8 +14,10 @@ import { LuGithub } from "react-icons/lu";
 
 function MovieTime() {
   return (
-    <div className="mb-4 flex grid-cols-6 flex-col items-center lg:grid    ">
-      <div className="order-2  col-span-2 flex h-full w-full flex-col justify-center bg-[#B275F0]  px-4 lg:order-none lg:px-10">
+    <div className="mb-4 flex flex-col items-center lg:grid lg:grid-cols-6    ">
+      <div className="relative order-2  col-span-2 flex h-full w-full flex-col justify-center bg-[#B275F0]  px-4 lg:order-none lg:px-10">
+        <FaInfoCircle size="24" className="absolute left-4 top-4" />
+
         <h1 className="pb-4 text-[2.5rem] font-bold text-gray-950">
           Movie Time
         </h1>
@@ -45,7 +51,7 @@ function MovieTime() {
         <Image
           src={movieCover}
           alt=""
-          className="  object-cover"
+          className="object-cover"
           placeholder="blur"
         />
       </div>
