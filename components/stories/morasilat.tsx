@@ -4,14 +4,30 @@ import Image from "next/image";
 import morasilatCover from "../../public/images/morasilat/morasilatCover.png";
 import { LuAsterisk } from "react-icons/lu";
 import { FaInfoCircle } from "react-icons/fa";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { FaX } from "react-icons/fa6";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, easeInOut, motion, useInView } from "framer-motion";
 
 function Morasilat() {
   const [info, showInfo] = useState(false);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 0.5 });
   return (
-    <div className="mb-4 flex flex-col items-center lg:grid lg:grid-cols-6   ">
+    <motion.div
+      ref={ref}
+      initial={{
+        x: 200,
+        opacity: 0,
+      }}
+      animate={
+        isInView && {
+          x: 0,
+          opacity: 1,
+        }
+      }
+      transition={{ delay: 1, easeInOut: 0.5 }}
+      className="mb-4 flex flex-col items-center lg:grid lg:grid-cols-6   "
+    >
       <div className="order-1 col-span-4 lg:order-none ">
         <Image
           src={morasilatCover}
@@ -70,7 +86,7 @@ function Morasilat() {
           </div>
         </motion.div>
       )}
-    </div>
+    </motion.div>
   );
 }
 

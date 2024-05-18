@@ -95,6 +95,9 @@ export default function Home() {
       </div>
       {/* projects section  */}
       <div className="mx-4 mb-20 mt-[200px] max-w-6xl space-y-40 xl:mx-auto">
+        <h1 className="text-center text-[2rem] font-bold">
+          Web3 projects coming soon!
+        </h1>
         <Morasilat />
         <Clinic />
         <ElectronicAf />
