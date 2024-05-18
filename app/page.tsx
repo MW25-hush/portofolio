@@ -19,6 +19,8 @@ const icons = [
   "firebase",
   "tailwind",
   "jest",
+  "vitest",
+  "docker",
 ];
 
 export default function Home() {
@@ -28,6 +30,7 @@ export default function Home() {
         <div className="flex flex-col items-center gap-4 lg:flex-row lg:justify-between">
           <div className="order-2 max-w-[80ch] lg:order-none">
             <p className="text-[2rem] font-bold text-[#4B5563]">Hello,</p>
+
             <h1 className=" pb-4 text-center text-[2.5rem]  leading-[1.25] md:text-[3rem] lg:text-left lg:text-[4rem] ">
               I&apos;m Mehdi Wahid.{" "}
               <span className="font-bold">A Front-End Engineer </span>
@@ -45,23 +48,26 @@ export default function Home() {
             />
           </div>
         </div>
-        <div className="animationOffset  mt-20  lg:flex lg:items-center ">
+        <div className="  mt-20  lg:flex lg:items-center ">
           <h1 className=" pb-4 text-center text-[1.5rem] font-bold lg:pb-0 lg:text-left lg:font-semibold ">
             Tech Stack
           </h1>
           <div className=" border-accent-gray lg:border-tertiary mx-auto w-11/12   border-b lg:ml-4 lg:mr-8 lg:h-10 lg:w-0 lg:border-r"></div>
           <div className="  flex flex-wrap  justify-center gap-4 pt-8 lg:pt-0   ">
-            {icons.map((icon, index) => (
-              <Image
-                key={icon}
-                src={`https://skillicons.dev/icons?i=${icon}`}
-                alt="icons"
-                className="animationOffset cursor-pointer  transition-transform duration-200  ease-in-out"
-                height={50}
-                width={55}
-                title={icon}
-                style={{ animationDelay: `${index * 0.5}s` }}
-              />
+            {icons.map((icon) => (
+              <div className="group relative " key={icon}>
+                <Image
+                  src={`https://skillicons.dev/icons?i=${icon}`}
+                  alt="icons"
+                  className="cursor-pointer "
+                  height={50}
+                  width={55}
+                />
+                <span className="absolute -top-8 left-1/2 -translate-x-1/2 transform rounded bg-gray-900 px-2 py-1 text-xs text-white opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                  {icon}
+                  <span className="absolute bottom-[-8px] left-1/2 -translate-x-1/2 transform border-4 border-transparent border-t-gray-900"></span>
+                </span>
+              </div>
             ))}
           </div>
         </div>
