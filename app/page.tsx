@@ -28,12 +28,14 @@ export default function Home() {
     <div className="pt-[172px]">
       <div className="mx-auto max-w-6xl">
         <div className="flex flex-col items-center gap-4 lg:flex-row lg:justify-between">
-          <div className="order-2 max-w-[80ch] lg:order-none">
-            <p className="text-[2rem] font-bold text-[#4B5563]">Hello,</p>
+          <div className="order-2  max-w-[80ch] lg:order-none">
+            <p className=" text-[2rem] font-bold text-[#4B5563]">Hello World</p>
 
             <h1 className=" pb-4 text-center text-[2.5rem]  leading-[1.25] md:text-[3rem] lg:text-left lg:text-[4rem] ">
-              I&apos;m Mehdi Wahid.{" "}
-              <span className="font-bold">A Front-End Engineer </span>
+              I&apos;m Mehdi Wahid.
+              <p className="animate-typing overflow-hidden  whitespace-nowrap border-r-4 border-r-black font-bold  ">
+                A Front-End Engineer
+              </p>
             </h1>
             <p className="max-w-prose text-[1.5rem]">
               Focus on user experience | Proficient in Next.js, TypeScript,
