@@ -6,6 +6,7 @@ import myPhoto from "../public/images/myPhoto.jpg";
 import Clinic from "@/components/stories/dentalClinic";
 import ElectronicAf from "@/components/stories/electronicAf";
 import MovieTime from "@/components/stories/movie";
+import { motion } from "framer-motion";
 
 const icons = [
   "figma",
@@ -23,6 +24,12 @@ const icons = [
   "docker",
 ];
 
+const variants = {
+  initial: { opacity: 0 },
+  animate: {
+    opacity: 1,
+  },
+};
 export default function Home() {
   return (
     <div className="pt-[172px]">
@@ -55,9 +62,21 @@ export default function Home() {
             Tech Stack
           </h1>
           <div className=" border-accent-gray lg:border-tertiary mx-auto w-11/12   border-b lg:ml-4 lg:mr-8 lg:h-10 lg:w-0 lg:border-r"></div>
-          <div className="  flex flex-wrap  justify-center gap-4 pt-8 lg:pt-0   ">
+          <motion.div
+            initial="initial"
+            animate="animate"
+            className="flex flex-wrap  justify-center gap-4 pt-8 lg:pt-0"
+            transition={{
+              staggerChildren: 0.1,
+              delayChildren: 3,
+            }}
+          >
             {icons.map((icon) => (
-              <div className="group relative " key={icon}>
+              <motion.div
+                variants={variants}
+                className="group relative "
+                key={icon}
+              >
                 <Image
                   src={`https://skillicons.dev/icons?i=${icon}`}
                   alt="icons"
@@ -69,9 +88,9 @@ export default function Home() {
                   {icon}
                   <span className="absolute bottom-[-8px] left-1/2 -translate-x-1/2 transform border-4 border-transparent border-t-gray-900"></span>
                 </span>
-              </div>
+              </motion.div>
             ))}
-          </div>
+          </motion.div>
         </div>
       </div>
       {/* projects section  */}
