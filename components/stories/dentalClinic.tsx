@@ -4,16 +4,32 @@ import Image from "next/image";
 import clinicCover from "../../public/images/clinic/clinicCover.png";
 import { LuAsterisk } from "react-icons/lu";
 import { FaInfoCircle } from "react-icons/fa";
-import { useState } from "react";
-import { AnimatePresence } from "framer-motion";
+import { useRef, useState } from "react";
+import { AnimatePresence, useInView } from "framer-motion";
 import { motion } from "framer-motion";
 import { FaX } from "react-icons/fa6";
 
 function Clinic() {
   const [info, showInfo] = useState(false);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 0.3 });
 
   return (
-    <div className="relative mb-4 flex flex-col items-center lg:grid lg:grid-cols-6   ">
+    <motion.div
+      ref={ref}
+      initial={{
+        x: -200,
+        opacity: 0,
+      }}
+      animate={
+        isInView && {
+          x: 0,
+          opacity: 1,
+        }
+      }
+      transition={{ delay: 1, easeInOut: 0.5 }}
+      className="relative mb-4 flex flex-col items-center lg:grid lg:grid-cols-6   "
+    >
       <FaInfoCircle
         size="24"
         className="absolute left-4 top-4 cursor-pointer hover:scale-110"
@@ -70,7 +86,7 @@ function Clinic() {
           placeholder="blur"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }
 

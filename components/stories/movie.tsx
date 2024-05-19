@@ -1,19 +1,35 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
 import { FaExternalLinkAlt, FaInfoCircle } from "react-icons/fa";
 import movieCover from "@/public/images/movieDB/movieCover.png";
 import Image from "next/image";
 import Link from "next/link";
 import { LuGithub } from "react-icons/lu";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence, motion, useInView } from "framer-motion";
 import { FaX } from "react-icons/fa6";
 
 function MovieTime() {
   const [info, showInfo] = useState(false);
+  const ref = useRef(null);
+  const isInView = useInView(ref, { amount: 0.3 });
 
   return (
-    <div className="mb-4 flex flex-col items-center lg:grid lg:grid-cols-6    ">
+    <motion.div
+      ref={ref}
+      initial={{
+        x: -200,
+        opacity: 0,
+      }}
+      animate={
+        isInView && {
+          x: 0,
+          opacity: 1,
+        }
+      }
+      transition={{ delay: 0.5, easeInOut: 0.5 }}
+      className="mb-4 flex flex-col items-center lg:grid lg:grid-cols-6    "
+    >
       {info ? (
         <AnimatePresence>
           <motion.div
@@ -89,7 +105,7 @@ function MovieTime() {
           placeholder="blur"
         />
       </div>
-    </div>
+    </motion.div>
   );
 }
 
