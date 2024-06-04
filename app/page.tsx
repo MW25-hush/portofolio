@@ -40,7 +40,7 @@ export default function Home() {
 
             <h1 className=" pb-4 text-center text-[2.5rem]  leading-[1.25] md:text-[3rem] lg:text-left lg:text-[4rem] ">
               I&apos;m Mehdi Wahid.
-              <p className="animate-typing overflow-hidden  whitespace-nowrap border-r-4 border-r-black font-bold  ">
+              <p className="animate-typing hidden overflow-hidden  whitespace-nowrap border-r-4 border-r-black font-bold  ">
                 A Front-End Engineer
               </p>
             </h1>

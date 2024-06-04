@@ -27,7 +27,7 @@ function MovieTime() {
           opacity: 1,
         }
       }
-      transition={{ delay: 0.5, easeInOut: 0.5 }}
+      transition={{ delay: 0.5, easeInOut: 0.5, duration: 1 }}
       className="mb-4 flex flex-col items-center lg:grid lg:grid-cols-6    "
     >
       {info ? (

@@ -25,7 +25,7 @@ function Morasilat() {
           opacity: 1,
         }
       }
-      transition={{ delay: 1, easeInOut: 0.5 }}
+      transition={{ delay: 1, easeInOut: 0.5, duration: 1 }}
       className="mb-4 flex flex-col items-center lg:grid lg:grid-cols-6   "
     >
       <div className="order-1 col-span-4 lg:order-none ">
