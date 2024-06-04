@@ -51,7 +51,7 @@ function ElectronicAf() {
               className="absolute right-4 top-4 cursor-pointer"
               onClick={() => showInfo(false)}
             />
-            <h1 className="mt-4 text-center text-[1.5rem] font-bold">
+            <h1 className="mt-4 text-center font-bold md:text-[1.5rem]">
               Electronic.AF
             </h1>
             <h2 className="mt-4">Tech Stack :</h2>
@@ -70,11 +70,11 @@ function ElectronicAf() {
         >
           <FaInfoCircle
             size="24"
-            className="absolute right-4 top-4 cursor-pointer hover:scale-110"
+            className="absolute right-4 top-4 hidden cursor-pointer hover:scale-110 md:block"
             onClick={() => showInfo(true)}
           />
 
-          <h1 className="pb-4 text-[2.5rem] font-bold text-gray-950">
+          <h1 className="  pb-4 text-[2rem] font-bold text-gray-950 md:text-[2.5rem]">
             Electronic.AF
           </h1>
           <p className="pb-8 text-gray-950">

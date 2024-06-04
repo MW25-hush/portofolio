@@ -32,7 +32,7 @@ function Clinic() {
     >
       <FaInfoCircle
         size="24"
-        className="absolute left-4 top-4 cursor-pointer hover:scale-110"
+        className="absolute left-4 top-4 hidden cursor-pointer hover:scale-110 md:block"
         onClick={() => showInfo(true)}
       />
 

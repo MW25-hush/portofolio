@@ -71,7 +71,7 @@ function Morasilat() {
         >
           <FaInfoCircle
             size="24"
-            className="absolute right-4 top-4 cursor-pointer hover:scale-110"
+            className="absolute right-4 top-4 hidden cursor-pointer hover:scale-110 md:block"
             onClick={() => showInfo(true)}
           />
           <h1 className="pb-4 text-[2.5rem] font-bold">Morasilat</h1>
